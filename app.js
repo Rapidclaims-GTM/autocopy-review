@@ -1,6 +1,6 @@
 /**
  * AutoCopy Review App
- * Elo-ranked Tinder-style email variant tournament
+ * Elo-ranked email variant tournament
  */
 
 // ============ STATE ============

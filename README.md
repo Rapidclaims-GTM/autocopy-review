@@ -1,6 +1,6 @@
 # AutoCopy Review App
 
-Tinder-style email comparison tool for optimizing outreach copy. Reviewers compare email sequence variants, and an Elo ranking system surfaces the best approaches.
+Email comparison tool for optimizing outreach copy. Reviewers compare email sequence variants side-by-side, and an Elo ranking system surfaces the best approaches.
 
 ## For Reviewers
 
