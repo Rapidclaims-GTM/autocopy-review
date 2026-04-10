@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoCopy Review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Screen 1: Reviewer Selection -->
+  <div id="screen-select" class="screen active">
+    <div class="container">
+      <div class="logo">AutoCopy</div>
+      <h1 id="day-title">Review</h1>
+      <p class="subtitle">Pick the email sequence you'd reply to</p>
+
+      <div id="elo-leaders" class="elo-leaders hidden">
+        <h3>Current Leaders</h3>
+        <div id="elo-leaders-list"></div>
+      </div>
+
+      <h2>Who are you?</h2>
+      <div id="reviewer-buttons" class="reviewer-grid"></div>
+    </div>
+  </div>
+
+  <!-- Screen 2: Comparison View -->
+  <div id="screen-compare" class="screen">
+    <div class="compare-header">
+      <div class="progress">
+        <span id="progress-text">1/12</span>
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+      </div>
+      <div id="profile-info" class="profile-info"></div>
+    </div>
+
+    <div class="compare-body">
+      <!-- Mobile: Tab switcher -->
+      <div class="tab-switcher mobile-only">
+        <button class="tab-btn active" data-tab="a">Version A</button>
+        <button class="tab-btn" data-tab="b">Version B</button>
+      </div>
+
+      <div class="compare-columns">
+        <div class="email-column" id="column-a" data-version="a">
+          <div class="version-label">Version A</div>
+          <div class="email-content" id="emails-a"></div>
+        </div>
+        <div class="email-column" id="column-b" data-version="b">
+          <div class="version-label">Version B</div>
+          <div class="email-content" id="emails-b"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vote-section">
+      <p class="vote-prompt">Which sequence would get a reply?</p>
+      <div class="vote-buttons">
+        <button class="vote-btn" id="vote-a" data-winner="A">A is better</button>
+        <button class="vote-btn vote-tie" id="vote-tie" data-winner="tie">Too close</button>
+        <button class="vote-btn" id="vote-b" data-winner="B">B is better</button>
+      </div>
+
+      <div id="aspect-section" class="aspect-section hidden">
+        <p class="aspect-prompt">What stood out? <span class="optional">(optional)</span></p>
+        <div id="aspect-chips" class="aspect-chips"></div>
+
+        <div class="comment-section">
+          <textarea id="comment-input" placeholder="Any comments? (optional)" rows="2"></textarea>
+        </div>
+
+        <button id="next-btn" class="next-btn">Next Pair</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Screen 3: Completion -->
+  <div id="screen-done" class="screen">
+    <div class="container">
+      <div class="done-icon">&#10003;</div>
+      <h1>Done!</h1>
+      <p id="done-count"></p>
+
+      <div id="done-summary" class="done-summary"></div>
+
+      <div id="done-leaders" class="elo-leaders"></div>
+
+      <p class="done-thanks">Thanks! New batch tomorrow.</p>
+    </div>
+  </div>
+
+  <!-- Screen 4: Already Done -->
+  <div id="screen-already-done" class="screen">
+    <div class="container">
+      <div class="done-icon">&#10003;</div>
+      <h1>Already submitted!</h1>
+      <p>You've already completed today's review.</p>
+      <p class="done-thanks">Come back tomorrow for a new batch.</p>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
