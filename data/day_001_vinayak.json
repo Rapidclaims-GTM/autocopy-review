@@ -1,583 +1,352 @@
 {
   "day": 1,
   "reviewer": "vinayak",
-  "generated_at": "2026-04-10T20:43:55.437672",
+  "phase": "style_exploration",
+  "generated_at": "2026-04-12T19:32:05Z",
   "pairs": [
     {
       "pair_number": 1,
-      "profile_id": "nirmit_kothari",
-      "person_name": "Nirmit Kothari",
-      "company_name": "Baptist Memorial Hospital \u00e2\u0080\u0093 Memphis",
-      "persona_type": "ceo",
-      "dimension": "branding",
+      "profile_id": "justin_wolgemuth",
+      "person_name": "Justin Wolgemuth",
+      "company_name": "Masonic Villages of Pennsylvania",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Curiosity Arc",
+      "archetype_description": "E1 opens a question, E2 rewards, E3 resolves \u2014 does the sequence feel more compelling?",
+      "what_to_notice": "Which version makes you want to open the next email?",
       "version_a": {
-        "variant_id": "brand_subtle",
+        "variant_id": "control",
+        "subject_line": "something we noticed at masonic villages",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed about Baptist Memorial's coding ops",
-            "email_body": "Hi Nirmit,\n\nRead your post about Andrew Baughen on Connecting the Dots. The focus on leadership alignment in healthcare operations stood out.\n\nBaptist Memorial Memphis runs high-complexity inpatient volume. Without autonomous coding technology, that complexity usually means 10-15% of claims need rework before adjudication.\n\nReworked claims at that scale cost more than the denials themselves in staff time.\n\nCurious whether Baptist Memorial is prioritizing first-pass rate improvement or denial reduction as the primary coding metric right now?"
+            "email_body": "Hi Justin,\n\nNoticed Masonic Villages is running operations across multiple CCRC campuses in Pennsylvania with a team of 2500. That kind of footprint means billing and coding complexity across a lot of payer mixes, care settings, and locations.\n\nOne VP at a similar senior living network was managing the same sprawl and cut A/R days by 30% after moving to autonomous coding \u2014 without adding to their billing team.\n\nVPs use RapidClaims to reduce coding costs by 40% while keeping accuracy above 98%. Worth asking whether that math holds for an operation Masonic Villages' size?"
           },
           {
             "email_number": 2,
-            "subject_line": "a thought about Baptist Memorial's first-pass rate",
-            "email_body": "Hey Nirmit,\n\nYou're speaking at Becker's in April on healthcare operations. Our team is working with CMOs at similar systems on exactly this.\n\nAI-powered coding at a comparable regional hospital system lifted first-pass rates from 82% to 96% and reduced coder overtime by 40% in under four months.\n\nIs coding throughput and accuracy something your team is actively benchmarking against peer systems?"
+            "email_body": "Hey Justin,\n\nSince I mentioned that senior living network, here's what the numbers actually looked like. They were stretched across four campuses, dealing with inconsistent coder output and rising cost-to-collect. After deploying RapidClaims in about 8 weeks, their coders were handling 1.7x the charts per day with no additional headcount.\n\nI can share a simple benchmark we use with multi-site operators \u2014 it maps coding cost against campus count and payer mix to show where the drag usually lives.\n\nWould that kind of framework be useful to pressure-test against what you're seeing across your campuses?"
           },
           {
             "email_number": 3,
-            "subject_line": "Baptist Memorial - before Becker's",
-            "email_body": "Hello Nirmit,\n\nYou're days from Becker's. The CMOs I see most focused on autonomous coding technology are the ones driving measurable margin recovery without headcount expansion.\n\nOur team has helped three similar regional systems recover 4-6% of net patient revenue through coding precision alone.\n\nWould it help to see how similar organizations approached this before you head into conference conversations?"
+            "email_body": "Hello Justin,\n\nMost operations leaders we talk to at networks your size are focused on headcount and margin. The thing that usually surprises them is how much revenue leakage is sitting in denials, not staffing. Masonic Villages' scale means that problem compounds across every campus.\n\nVPs use RapidClaims to cut denials by 27% and bring cost-to-collect down by 70%, typically within a single quarter of going live.\n\nWorth 15 minutes to walk through what that looks like for a CCRC network specifically?"
           }
         ]
       },
       "version_b": {
-        "variant_id": "brand_none",
+        "variant_id": "struct_curiosity",
+        "subject_line": "the masonic villages billing question we keep hearing",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed about Baptist Memorial's coding ops",
-            "email_body": "Hi Nirmit,\n\nRead your post about Andrew Baughen on Connecting the Dots. The focus on leadership alignment in healthcare operations stood out.\n\nBaptist Memorial Memphis runs high-complexity inpatient volume. That complexity usually means 10-15% of claims need rework before adjudication without the right infrastructure.\n\nReworked claims at that scale cost more than the denials themselves in staff time.\n\nCurious whether Baptist Memorial is prioritizing first-pass rate improvement or denial reduction as the primary coding metric right now?"
+            "email_body": "Hi Justin,\n\nHere's something that keeps coming up with multi-campus senior living operators: the organizations that look the most operationally mature on paper are usually the ones quietly absorbing the most billing drag. More locations, more payer contracts, more places for revenue to slip.\n\nMasonic Villages is running 2500 people across multiple Pennsylvania campuses. That's a lot of moving parts to keep revenue cycle clean.\n\nCurious, when you look across your campuses, is the billing complexity something your team is actively managing or something that's mostly running in the background?"
           },
           {
             "email_number": 2,
-            "subject_line": "a thought about Baptist Memorial's first-pass rate",
-            "email_body": "Hey Nirmit,\n\nYou're speaking at Becker's in April on healthcare operations. I work with CMOs at similar systems on exactly this challenge.\n\nA comparable regional hospital system lifted first-pass rates from 82% to 96% and reduced coder overtime by 40% in under four months through coding process redesign.\n\nIs coding throughput and accuracy something your team is actively benchmarking against peer systems?"
+            "email_body": "Hey Justin,\n\nSince I raised that question about billing drag at scale, here's what actually happened at one org that looked a lot like Masonic Villages. Multi-site senior living network, operationally strong, assumed their RCM was fine because it wasn't visibly broken.\n\nThey ran a benchmark and found their coders were processing roughly half the charts per day of what autonomous coding could handle. Deploying RapidClaims in 8 weeks got them to 1.7x coder productivity and cut their cost-to-collect by 70%.\n\nThe drag was there the whole time. They just hadn't had a number to put on it. Want me to share how that benchmark works?"
           },
           {
             "email_number": 3,
-            "subject_line": "Baptist Memorial - before Becker's",
-            "email_body": "Hello Nirmit,\n\nYou're days from Becker's. The CMOs I see driving measurable margin recovery are focused on coding precision, not headcount expansion.\n\nWe've helped three similar regional systems recover 4-6% of net patient revenue through coding accuracy improvements alone.\n\nWould it help to see how similar organizations approached this before you head into conference conversations?"
+            "email_body": "Hello Justin,\n\nOne thing I didn't mention earlier: the network I referenced wasn't struggling. They were hitting their targets, keeping staff in place, no visible fires. The 70% cost-to-collect improvement and 27% denial reduction came on top of a baseline that already looked healthy.\n\nThat's usually what we find at organizations Masonic Villages' size. It's not about fixing something broken, it's about finding what scale is quietly costing you.\n\nI'd like to show you what that looks like for a CCRC operator specifically. Would 15 minutes this week work?"
           }
         ]
       }
     },
     {
       "pair_number": 2,
-      "profile_id": "nirmit_kothari",
-      "person_name": "Nirmit Kothari",
-      "company_name": "Baptist Memorial Hospital \u00e2\u0080\u0093 Memphis",
-      "persona_type": "ceo",
-      "dimension": "sequence_flow",
+      "profile_id": "connie_perez",
+      "person_name": "Connie Perez",
+      "company_name": "Hospice of the Valley",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Ultra Short",
+      "archetype_description": "4 sentences max, 55-70 words. Problem \u2192 Solution \u2192 Proof \u2192 CTA with no narrative.",
+      "what_to_notice": "Which length feels right for a cold email from someone you don't know?",
       "version_a": {
-        "variant_id": "seq_angle_shift",
+        "variant_id": "control",
+        "subject_line": "your new role at hospice of the valley",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed about Baptist Memorial's revenue cycle",
-            "email_body": "Hi Nirmit,\n\nBaptist Memorial Memphis handles high-acuity inpatient cases where coding complexity is highest. Most comparable systems are leaving 3-5% of net patient revenue uncaptured due to coding gaps on complex DRGs.\n\nAt your revenue scale, that is $8-15M annually sitting in undercoded or denied claims.\n\nPrecision coding on complex cases recovers that without volume changes or additional payer negotiations.\n\nCurious whether Baptist Memorial is prioritizing complex case coding accuracy or overall denial rate as the bigger opportunity?"
+            "email_body": "Hi Connie,\n\nSaw your post about stepping into the VP of Business Operations role at Hospice of the Valley. New role, new ownership over where the revenue cycle holds or quietly bleeds.\n\nWe just wrapped work with a hospice network in a similar spot and their new operations lead found the coding layer was the main drag on A/R days. They ended up pulling two planned billing hires after seeing what automation could cover instead.\n\nVPs use RapidClaims to cut A/R days by 30% in the first quarter. Is RCM something you're evaluating as you get up to speed?"
           },
           {
             "email_number": 2,
-            "subject_line": "a thought about your role at Baptist Memorial",
-            "email_body": "Hey Nirmit,\n\nYour Becker's talk on healthcare operations leadership signals you are thinking about system-level efficiency, not just clinical outcomes.\n\nAs ACMO, coding accuracy sits at the intersection of clinical documentation and revenue capture. Leaders in your role who close that gap typically see 15-20% denial reduction within 90 days.\n\nIs revenue cycle optimization something you own directly, or does it run through a separate CFO track at Baptist Memorial?"
+            "email_body": "Hey Connie,\n\nRead that Hospice of the Valley is expanding into Tucson and participating in the new Medicare GUIDE model for dementia care. That's a meaningful lift in complexity for the ops and billing side.\n\nOne VP at a comparable hospice network told us the GUIDE model billing requirements alone were enough to stress-test their existing coding setup. They got to 98% accuracy and 1.7x coder productivity without adding headcount.\n\nWorth a quick look at whether the same math applies here as you're scaling?"
           },
           {
             "email_number": 3,
-            "subject_line": "what other CMOs at regional systems are doing",
-            "email_body": "Hello Nirmit,\n\nThree ACMOs and CMOs at similar regional systems I've spoken with in the last quarter are moving toward automated coding validation on complex inpatient claims.\n\nAll three cited the same trigger: payer audit pressure combined with coder turnover making manual accuracy unsustainable.\n\nWould it help to see how those peers approached this and what results they measured in the first 60 days?"
+            "email_body": "Hello Connie,\n\nRead that Hospice of the Valley had roughly a 12% retirement rate in 2024 and has been navigating hiring challenges on the clinical side. That kind of turnover puts real pressure on the back office too.\n\nVPs in similar positions have used RapidClaims to cut coding costs by 40% while keeping accuracy above 98%, which gives the team room to absorb capacity gaps without just adding headcount.\n\nIf it's useful, I can share how a comparable network handled this. Is there a 20-minute window that works?"
           }
         ]
       },
       "version_b": {
-        "variant_id": "seq_escalate",
+        "variant_id": "struct_direct",
+        "subject_line": "connie, quick thought",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed about Baptist Memorial's revenue cycle",
-            "email_body": "Hi Nirmit,\n\nRead your post about Andrew Baughen on Connecting the Dots. Leadership alignment on operational efficiency is exactly where revenue cycle improvements either stick or stall.\n\nBaptist Memorial Memphis's inpatient complexity puts coding accuracy under constant pressure. Most similar systems leave 3-5% of net patient revenue uncaptured annually.\n\nAt scale, that gap compounds faster than payer contract gains can offset.\n\nCurious whether Baptist Memorial is prioritizing coding accuracy or denial management as the more immediate revenue lever?"
+            "email_body": "Hi Connie,\n\nHospice networks your size typically carry A/R drag that sits in the coding layer, not the billing team. RapidClaims automates clinical coding so your ops team isn't dependent on coder capacity to close claims. A comparable hospice network cut A/R days by 30% in the first quarter after switching. Worth a 20-minute look as you're getting oriented in the role?"
           },
           {
             "email_number": 2,
-            "subject_line": "proof point for Baptist Memorial's coding challenge",
-            "email_body": "Hey Nirmit,\n\nA regional hospital system comparable to Baptist Memorial reduced their complex DRG denial rate by 38% and recovered $3.2M in previously uncaptured revenue within one quarter.\n\nThe lever was coding precision on high-complexity cases, not renegotiated contracts or headcount changes.\n\nI can share the approach we used. Is denial reduction on complex inpatient cases something your team has active targets around?"
+            "email_body": "Hey Connie,\n\nExpanding into new care models like GUIDE means more coding complexity on the same team. RapidClaims handles that complexity at the source so accuracy doesn't slip when volume grows. One VP at a similar network hit 98% accuracy and 1.7x coder productivity without adding headcount. Is that a problem worth solving right now?"
           },
           {
             "email_number": 3,
-            "subject_line": "Baptist Memorial coding revenue - final thought",
-            "email_body": "Hello Nirmit,\n\nYou're heading into Becker's next week. The conversations I have with the most outcome-focused CMOs always come back to the same gap: complex case coding accuracy.\n\nWe have capacity for one new system partnership this quarter. Three similar organizations moved forward in Q1.\n\nWould it help to see how those CMOs structured the business case before your conference?"
+            "email_body": "Hello Connie,\n\nHigh retirement rates in clinical staff create real downstream pressure on coding throughput and collections. RapidClaims fills that gap by processing up to 500 charts per day autonomously, deployed in 8 weeks. A comparable organization cut cost to collect by 70% without a single new hire. Happy to share the specifics if it's relevant to what you're building."
           }
         ]
       }
     },
     {
       "pair_number": 3,
-      "profile_id": "anthony_leazzo",
-      "person_name": "Anthony Leazzo",
-      "company_name": "Morris Hospital",
-      "persona_type": "ceo_cfo",
-      "dimension": "subject_line",
+      "profile_id": "nathan_niles",
+      "person_name": "Nathan Niles",
+      "company_name": "White Horse Village Inc.",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Bullet Format",
+      "archetype_description": "Hook sentence + 2-3 metric bullets + CTA. No narrative, just scannable value.",
+      "what_to_notice": "Does the bulleted format make this easier or harder to read?",
       "version_a": {
-        "variant_id": "subj_question",
+        "variant_id": "control",
+        "subject_line": "your shiftkey partnership post",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "how is Morris Hospital handling denials right now?",
-            "email_body": "Hi Anthony,\n\nRead your post on LinkedIn. The perspective on physician leadership and operational accountability resonated.\n\nMorris Hospital had documented revenue cycle challenges tied to their EMR transition. Systems in that position typically carry elevated denial rates 18-24 months after a platform change.\n\nCodification gaps on the back end compound faster than front-end workflow improvements can offset.\n\nCurious whether Morris Hospital is prioritizing denial prevention or denial recovery as the primary revenue cycle focus this year?"
+            "email_body": "Hi Nathan,\n\nSaw your post about the NexLyte and ShiftKey partnership. You're clearly building out a deliberate vendor ecosystem, which usually signals cost and capacity pressure across more than one department.\n\nInteresting timing. We just wrapped work with a mid-size CCRC where the VP of Finance was doing the same kind of vendor evaluation and realized the RCM and coding layer hadn't been touched yet.\n\nVPs at similar orgs use RapidClaims to cut coding costs by 40% without adding billing headcount. Is the RCM side in the same evaluation cycle you're running right now?"
           },
           {
             "email_number": 2,
-            "subject_line": "Morris Hospital's approach to claim accuracy?",
-            "email_body": "Hey Anthony,\n\nA community hospital similar in size to Morris completed a revenue cycle overhaul after an EMR migration. First-pass claim rate improved from 78% to 94% within five months.\n\nThe fix was not more staff. It was coding accuracy at the point of claim submission, cutting the rework loop entirely.\n\nI can share the specifics. Is first-pass rate something your team actively tracks against regional benchmarks?"
+            "email_body": "Hey Nathan,\n\nFollowing up on this because the ShiftKey angle stuck with me. On-demand staffing solves one side of the cost equation, but it's often the billing backend where the real drag lives.\n\nAt a senior living org similar to White Horse Village, the team was pulling in contract coders to keep up with volume. After deploying RapidClaims, coder productivity jumped 1.7x and A/R days dropped 30% without changing the staffing model at all.\n\nIf you're already stress-testing vendor partnerships, it's worth knowing what the coding layer could absorb. Worth a 20-minute look?"
           },
           {
             "email_number": 3,
-            "subject_line": "Morris Hospital's revenue recovery - direct question",
-            "email_body": "Hello Anthony,\n\nWith robotic surgery expansion and facility consolidations underway, Morris Hospital is investing in clinical capacity. Revenue cycle precision determines how much of that investment pays back.\n\nSystems we've worked with at your size typically recover $1.5-3M annually through coding accuracy improvements alone.\n\nWould it help to see how similar community hospitals approached the revenue cycle gap after major capital investments?"
+            "email_body": "Hello Nathan,\n\nLast note on this. The grant White Horse Village received in January and the new hires signal a growth phase, and that's usually when the revenue cycle either keeps pace or becomes the bottleneck.\n\nRapidClaims deploys in 8 weeks and hits 98% coding accuracy out of the gate. VPs typically see denial rates drop 27% in the first 90 days, which compounds fast at your revenue scale.\n\nIf the timing isn't right, no pressure. But if RCM is on your radar for 2026, I'd rather you hear the numbers now than after the budget is locked."
           }
         ]
       },
       "version_b": {
-        "variant_id": "subj_metric",
+        "variant_id": "struct_bullets",
+        "subject_line": "what your shiftkey post raised for us",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "34% fewer denials at similar community hospitals",
-            "email_body": "Hi Anthony,\n\nRead your post on LinkedIn. The perspective on physician leadership and operational accountability resonated.\n\nMorris Hospital had documented revenue cycle challenges tied to their EMR transition. Systems in that position typically carry elevated denial rates 18-24 months post-migration.\n\nCodification gaps on the back end compound faster than front-end workflow improvements can offset.\n\nCurious whether Morris Hospital is prioritizing denial prevention or denial recovery as the primary revenue cycle focus this year?"
+            "email_body": "Hi Nathan,\n\nYour NexLyte and ShiftKey partnership post caught my attention. You're building out the vendor stack, but most senior living orgs at your size haven't evaluated the RCM and coding layer yet.\n\nWhat we see at similar CCRCs:\n- Coding cost down 40% without adding billing headcount\n- Denial rates down 27% in the first 90 days\n- A/R days reduced by 30% within a quarter\n\nIs RCM in the same vendor evaluation cycle you're running right now?"
           },
           {
             "email_number": 2,
-            "subject_line": "94% first-pass rate: what it took at a comparable hospital",
-            "email_body": "Hey Anthony,\n\nA community hospital similar in size to Morris improved first-pass claim rates from 78% to 94% in five months post-EMR migration.\n\nThe lever was coding accuracy at submission, not more staff. That shift eliminated the rework loop and freed up 30% of billing team capacity.\n\nIs first-pass rate something your team actively tracks against regional benchmarks?"
+            "email_body": "Hey Nathan,\n\nFollowing up because the staffing side and the billing side tend to move together at orgs your size.\n\nHere's what the RapidClaims deployment typically looks like:\n- 8-week deployment, no disruption to existing workflow\n- Coder productivity increases 1.7x on current chart volume\n- 98% first-pass coding accuracy from day one\n\nIf you're already stress-testing vendor partnerships, the coding layer is worth 20 minutes. Open to a quick call this week?"
           },
           {
             "email_number": 3,
-            "subject_line": "$2M recovered annually at a 1,800-employee hospital",
-            "email_body": "Hello Anthony,\n\nWith robotic surgery expansion and facility consolidations underway, Morris Hospital is growing clinical capacity. Revenue cycle precision determines how much returns to margin.\n\nSystems at your size typically recover $1.5-3M annually through coding accuracy improvements, without adding headcount.\n\nWould it help to see how similar community hospitals structured that recovery after major capital investment cycles?"
+            "email_body": "Hello Nathan,\n\nLast note. With the January grant and new hires, White Horse Village is in a growth phase and that's exactly when revenue cycle performance either scales with you or holds you back.\n\nThe numbers at similar orgs:\n- Revenue up 5% from recovered undercoding\n- Cost to collect down 70%\n- Denials down 27% in the first 90 days\n\nIf 2026 budget conversations are still open, I'd rather give you the data now. Worth a quick call?"
           }
         ]
       }
     },
     {
       "pair_number": 4,
-      "profile_id": "carrie_willetts",
-      "person_name": "Carrie Willetts",
-      "company_name": "WVU Medicine (AKA West Virginia University Health System)",
-      "persona_type": "ceo_cfo",
-      "dimension": "email_structure",
+      "profile_id": "sherri_liebl",
+      "person_name": "Sherri Liebl",
+      "company_name": "CentraCare",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Peer Story",
+      "archetype_description": "Each email built around an anonymized peer's story \u2014 does narrative feel more relatable than data?",
+      "what_to_notice": "Does the story format feel more relatable or less credible?",
       "version_a": {
-        "variant_id": "struct_theone",
+        "variant_id": "control",
+        "subject_line": "centracare's billing capacity after the restructuring",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed about WVU Medicine's integration timeline",
-            "email_body": "Hi Carrie,\n\nRead your post about the talent in healthcare and the work that goes unseen. That framing stuck with me.\n\nWVU Medicine is absorbing Independence Health System with Epic implementation across five new hospitals. Integration timelines of that scale historically produce 15-20% temporary drops in coding accuracy during go-live windows.\n\nUncaptured revenue in that window is rarely recovered retroactively.\n\nCurious whether WVU Medicine is prioritizing coding continuity or denial management as the higher risk during the Independence integration?"
+            "email_body": "Hi Sherri,\n\nRead that CentraCare cut 535 positions earlier this year, with 70% coming from administrative and support roles including billing. That's a significant reduction in coding and revenue cycle capacity at a time when the system is already working through a $19.8M operating loss.\n\nThe tension that creates is real: fewer hands, same volume, same revenue targets.\n\nVPs use RapidClaims to close that gap without rebuilding headcount. One health system reduced A/R days by 30% after a similar restructuring.\n\nHow are you thinking about maintaining throughput on the coding side with a leaner team?"
           },
           {
             "email_number": 2,
-            "subject_line": "a thought about WVU Medicine's Epic rollout risk",
-            "email_body": "Hey Carrie,\n\nWVU Medicine's $800M Independence investment is one of the largest health system integrations in the region this year.\n\nA system that ran a comparable multi-hospital Epic migration maintained 97% coding accuracy throughout go-live by layering automated coding validation on top of the transition workflow. They protected $4.8M in revenue that would have otherwise slipped through the change window.\n\nIs coding accuracy during the integration something your team has a formal continuity plan for?"
+            "email_body": "Hey Sherri,\n\nFollowing up on my note from last week.\n\nThe piece that tends to surprise VPs in your position is how quickly the math shifts. Coding cost drops 40% and accuracy stays above 98%, so it's not a tradeoff between speed and quality.\n\nFor a system CentraCare's size, that kind of efficiency doesn't require a rip-and-replace. Most teams are fully deployed in about 8 weeks.\n\nWorth a 20-minute call to walk through what this looks like against your current capacity model?"
           },
           {
             "email_number": 3,
-            "subject_line": "WVU Medicine integration - one conversation worth having",
-            "email_body": "Hello Carrie,\n\nThe Independence Health System close is set for fall 2026. The revenue risk in the 90 days around a five-hospital Epic cutover is real and measurable.\n\nSystems we've worked through comparable integrations with recovered 3-4% of annual net revenue that would have otherwise been lost in the transition.\n\nWould it help to see how similar health systems structured coding continuity through a multi-hospital Epic migration?"
+            "email_body": "Hello Sherri,\n\nLast note from me on this.\n\nWith the restructuring behind you and revenue performance still on the line, the gap between available coding capacity and claim volume is the variable that compounds quietly. Denials climb, A/R stretches, and the pressure lands squarely in revenue services.\n\nRapidClaims is purpose-built for exactly that scenario. Coders become 1.7x more productive and cost to collect drops 70%, without adding headcount.\n\nIf the timing makes sense, happy to show you how other VP Revenue leaders are running this."
           }
         ]
       },
       "version_b": {
-        "variant_id": "struct_curiosity",
+        "variant_id": "struct_story",
+        "subject_line": "what a midwest health system did after cutting their billing team",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed about WVU Medicine's integration timeline",
-            "email_body": "Hi Carrie,\n\nRead your post about the unseen talent that makes healthcare run. The observation was sharp.\n\nHere is a question that comes up every time a health system runs a multi-hospital Epic migration: why do the best-prepared systems still lose 10-15% of coding accuracy in the go-live window, even when they plan for it?\n\nThe answer is counterintuitive and has nothing to do with training or staffing levels.\n\nCurious whether WVU Medicine has encountered this pattern as you plan the Independence Health System integration?"
+            "email_body": "Hi Sherri,\n\nA VP Revenue Services at a regional Midwest health system laid off a significant portion of her billing staff last year as part of a broader cost reduction. Her concern wasn't the cuts themselves, it was whether first-pass rates would hold after.\n\nThey didn't just hold. A/R days dropped 30% within two quarters because autonomous coding removed the backlog her reduced team had been quietly accumulating.\n\nSaw that CentraCare went through a similar restructuring, 535 positions, 70% administrative and billing. Curious whether maintaining revenue throughput is the challenge you're navigating right now?"
           },
           {
             "email_number": 2,
-            "subject_line": "the answer to last week's question about Epic migrations",
-            "email_body": "Hey Carrie,\n\nThe reason prepared systems still lose coding accuracy during Epic go-lives is structural, not operational. The EMR transition changes the documentation workflow faster than coder pattern recognition can adapt.\n\nA system running five simultaneous hospital cutoffs protected $4.8M by inserting automated coding validation between documentation and claim submission during the 90-day transition window.\n\nIs that the kind of continuity gap WVU Medicine has mapped out for the Independence integration?"
+            "email_body": "Hey Sherri,\n\nDifferent angle, same problem. A CFO at a comparable health system tried to patch their post-layoff coding gap with contract coders. The cost was manageable at first, but accuracy was inconsistent and denials crept up 15% over six months.\n\nThey switched to autonomous coding mid-year. Accuracy went above 98%, denial rate dropped 27%, and they were able to let the contract arrangements lapse entirely.\n\nThe contrast he described was straightforward: contract coders add variable cost, autonomous coding reduces fixed cost while improving consistency.\n\nIs that tradeoff something you're weighing right now at CentraCare?"
           },
           {
             "email_number": 3,
-            "subject_line": "the full picture on WVU Medicine's integration revenue risk",
-            "email_body": "Hello Carrie,\n\nHere is the complete picture: systems that invest in coding accuracy as a standalone workstream during Epic migrations retain 97-99% of baseline revenue through go-live. Those that rely on standard EMR training alone average 12% temporary slippage.\n\nOn WVU Medicine's revenue base, that difference is $80M or more during the transition window.\n\nWould it help to see how comparable systems structured their coding continuity plan before the cutover?"
+            "email_body": "Hello Sherri,\n\nBringing this back to CentraCare specifically.\n\nYou're carrying a $19.8M operating loss, a leaner billing team, and the same revenue targets. The VPs who've navigated that combination most successfully didn't try to rehire their way out of it, they changed what each coder could process. Productivity goes to 1.7x, cost to collect drops 70%, and deployment runs about 8 weeks.\n\nThat's a meaningful shift in what your revenue services org can do with the team it has.\n\nWould a 20-minute conversation be worth it to see if the numbers hold for CentraCare's volume?"
           }
         ]
       }
     },
     {
       "pair_number": 5,
-      "profile_id": "anthony_leazzo",
-      "person_name": "Anthony Leazzo",
-      "company_name": "Morris Hospital",
-      "persona_type": "ceo_cfo",
-      "dimension": "opening_hook",
+      "profile_id": "dawn_lambie",
+      "person_name": "Dawn Lambie",
+      "company_name": "Bristol Hospice",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Bold / Scannable",
+      "archetype_description": "Same structure as current style, but 1-2 key phrases bolded per email for mobile scanning.",
+      "what_to_notice": "Does the bold text help you skim faster, or does it feel like clickbait?",
       "version_a": {
-        "variant_id": "hook_linkedin",
+        "variant_id": "control",
+        "subject_line": "bristol hospice's 9-state expansion",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed about Morris Hospital's revenue cycle",
-            "email_body": "Hi Anthony,\n\nRead your post on LinkedIn. Your perspective on physician leadership carrying operational accountability alongside clinical work landed.\n\nMorris Hospital's documented EMR transition challenges produced over $7M in unposted cash receipts and a formal denials management gap. That kind of structural exposure typically persists 2-3 years post-migration.\n\nRecovering that gap requires precision at the coding layer, not just front-end workflow changes.\n\nCurious whether Morris Hospital is prioritizing claim accuracy or denial management as the more immediate revenue focus right now?"
+            "email_body": "Hi Dawn,\n\nRead that Bristol Hospice expanded into Mississippi, Pennsylvania, Oklahoma, and Texas in January, with five more markets planned across Ohio, Minnesota, Michigan, and Indiana. That's a significant footprint to build in a short window.\n\nThe challenge we usually see at that pace is billing and coding capacity lagging behind new site volume. Hiring a coder for every market isn't the math that works when you're scaling this fast.\n\nVPs use RapidClaims to grow coding throughput without growing headcount, bringing A/R days down 30% across multi-state networks.\n\nWorth a quick conversation about whether that math fits where Bristol's headed?"
           },
           {
             "email_number": 2,
-            "subject_line": "a thought about Morris Hospital's coding accuracy",
-            "email_body": "Hey Anthony,\n\nA community hospital at Morris's revenue scale rebuilt their revenue cycle after a comparable EMR transition. First-pass rate moved from 76% to 93% in four months. Denial volume dropped 31%.\n\nThe intervention was automated coding accuracy on complex cases, not new staff or renegotiated contracts.\n\nI can share the specifics of how they structured it. Is claim denial rate something your team has active targets on this fiscal year?"
+            "email_body": "Hey Dawn,\n\nFollowing up on this. One VP Ops at a multi-state hospice network told us their biggest surprise wasn't the technology, it was realizing their coding costs dropped 40% before they'd finished onboarding the third new location.\n\nWith a PE-backed deal and nine markets on the roadmap, the pressure on your billing team is only going to compound. Autonomous coding means that pressure doesn't require proportionally more staff to absorb.\n\nHappy to walk through how a network similar to Bristol's structured the rollout. Does that sound useful?"
           },
           {
             "email_number": 3,
-            "subject_line": "Morris Hospital revenue - one direct question",
-            "email_body": "Hello Anthony,\n\nMorris Hospital is expanding surgical capability and consolidating physician offices. Clinical investment at that level requires revenue cycle precision to deliver margin return.\n\nSystems your size typically recover $1.5-3M annually through coding accuracy improvements, without adding headcount. We have room for one new community hospital engagement this quarter.\n\nWould it help to see how similar organizations built the business case for this investment?"
+            "email_body": "Hello Dawn,\n\nLast note on this. RapidClaims processes 500 charts per day per deployment and maintains accuracy above 98%, which is what makes it viable during high-growth periods when you can't afford claim errors on top of operational complexity.\n\nMost hospice networks we work with are live within eight weeks, meaning the capacity is there before the next market opens rather than catching up after.\n\nIf the timing isn't right, no problem at all. But if scaling billing without scaling headcount is something on your radar for this year, it's worth thirty minutes."
           }
         ]
       },
       "version_b": {
-        "variant_id": "hook_peer",
+        "variant_id": "struct_bold_scannable",
+        "subject_line": "bristol hospice's 9-state expansion",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed about Morris Hospital's revenue cycle",
-            "email_body": "Hi Anthony,\n\nSpoke with a CMO at a comparable community hospital who was dealing with the same pattern Morris Hospital faced after its Meditech migration: $6M in unposted cash and no formal denials program.\n\nThree years post-migration, the structural gap was still costing them 8-10% of annual revenue in avoidable denials and undercoding on complex cases.\n\nMorris Hospital is in a similar window.\n\nCurious whether coding accuracy or denial prevention is the more urgent priority for your revenue cycle team right now?"
+            "email_body": "Hi Dawn,\n\nRead that Bristol Hospice expanded into Mississippi, Pennsylvania, Oklahoma, and Texas in January, with five more markets planned across Ohio, Minnesota, Michigan, and Indiana. That's a significant footprint to build in a short window.\n\nThe challenge we usually see at that pace is billing and coding capacity lagging behind new site volume. Hiring a coder for every market isn't the math that works when you're scaling this fast.\n\nVPs use RapidClaims to grow coding throughput without growing headcount, bringing **A/R days down 30%** across multi-state networks.\n\nWorth a quick conversation about whether that math fits where Bristol's headed?"
           },
           {
             "email_number": 2,
-            "subject_line": "a thought about Morris Hospital's coding accuracy",
-            "email_body": "Hey Anthony,\n\nThat same CMO ran an automated coding accuracy intervention four months after we spoke. First-pass rate went from 76% to 93%. Denial volume dropped 31%.\n\nNo new staff. The fix was precision at the coding layer before claims went out the door.\n\nI can walk you through exactly how they structured it. Is claim accuracy something your team has measurable targets around this year?"
+            "email_body": "Hey Dawn,\n\nFollowing up on this. One VP Ops at a multi-state hospice network told us their biggest surprise wasn't the technology, it was realizing their coding costs dropped 40% before they'd finished onboarding the third new location.\n\nWith a PE-backed deal and nine markets on the roadmap, the pressure on your billing team is only going to compound. **Autonomous coding means that pressure doesn't require proportionally more staff to absorb.**\n\nHappy to walk through how a network similar to Bristol's structured the rollout. Does that sound useful?"
           },
           {
             "email_number": 3,
-            "subject_line": "Morris Hospital revenue - one direct question",
-            "email_body": "Hello Anthony,\n\nMorris Hospital is expanding surgical capability and consolidating physician offices. Clinical investment at that level requires revenue cycle precision to deliver margin return.\n\nSystems your size typically recover $1.5-3M annually through coding accuracy improvements alone. We have room for one new community hospital engagement this quarter.\n\nWould it help to see how similar organizations built the business case for this investment?"
+            "email_body": "Hello Dawn,\n\nLast note on this. RapidClaims processes 500 charts per day per deployment and maintains **accuracy above 98%**, which is what makes it viable during high-growth periods when you can't afford claim errors on top of operational complexity.\n\nMost hospice networks we work with are live within eight weeks, meaning the capacity is there before the next market opens rather than catching up after.\n\nIf the timing isn't right, no problem at all. But if scaling billing without scaling headcount is something on your radar for this year, it's worth thirty minutes."
           }
         ]
       }
     },
     {
       "pair_number": 6,
-      "profile_id": "kim_bussie",
-      "person_name": "Kim Bussie",
-      "company_name": "Children's Hospital of Philadelphia",
-      "persona_type": "director",
-      "dimension": "cta_style",
+      "profile_id": "maulin_patel",
+      "person_name": "Maulin Patel",
+      "company_name": "OHSU",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Anti-AI / Human Signal",
+      "archetype_description": "Same signal, but no formula structure and one deliberate imperfection per email \u2014 sounds typed, not generated.",
+      "what_to_notice": "Which email feels like it was written by a real person? Which one would you actually reply to?",
       "version_a": {
-        "variant_id": "cta_social_proof",
+        "variant_id": "control",
+        "subject_line": "ohsu's operating losses and the coding layer",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed about CHOP's revenue integrity posture",
-            "email_body": "Hi Kim,\n\nRead your post about the One Big Beautiful Bill Act and its implications for safety-net providers. Your framing on Medicaid underpayment risk was precise.\n\nCHOP's payer mix and complexity make revenue integrity pressure particularly acute. Coding gaps on pediatric specialty claims are typically 12-15% higher than adult acute care.\n\nThat variance compounds fast on CHOP's claim volume.\n\nHappy to share how another children's hospital system handled this. Worth 15 min?"
+            "email_body": "Hi Maulin,\n\nRead about OHSU's $110M operating loss for fiscal 2024 and the S&P downgrade. At that scale, expenses outpacing revenue isn't just a budget problem, it's a signal that every recoverable dollar in the cycle matters.\n\nOne VP Finance at a comparable academic medical center ran autonomous coding across their inpatient volume and pulled A/R days down 30% without adding headcount. That kind of recovery at the coding layer compounds quickly against an operating gap.\n\nIs the revenue cycle being re-evaluated as part of the cost reduction work?"
           },
           {
             "email_number": 2,
-            "subject_line": "a thought about CHOP's HIM and coding accuracy",
-            "email_body": "Hey Kim,\n\nYour Becker's speaking slot on revenue integrity puts you in front of exactly the peer group wrestling with this.\n\nA Director of Revenue Integrity at a comparable pediatric specialty hospital cut their complex case denial rate by 38% in one quarter. The lever was automated coding validation on high-complexity pediatric DRGs, not additional HIM staff.\n\nA Director of HIM at a similar children's system reduced their rework loop by 40%. Want me to walk you through what they did?"
+            "email_body": "Hey Maulin,\n\nFollowing up on this. The piece that tends to surprise finance leadership is how fast it deploys, typically eight weeks to full production, so the impact hits within the same fiscal year rather than a future budget cycle.\n\nVPs at systems your size are also seeing coder productivity run at 1.7x and accuracy stay above 98%, which means you're not trading throughput for compliance exposure.\n\nGiven where OHSU's numbers landed in FY24, that timeline seems relevant. Worth a 20-minute conversation to see if the math holds at your volume?"
           },
           {
             "email_number": 3,
-            "subject_line": "CHOP revenue integrity - final thought",
-            "email_body": "Hello Kim,\n\nYou are a week from Becker's. The revenue integrity leaders I see driving the most measurable outcomes are moving from reactive denial management to upstream coding precision.\n\nThree pediatric health systems I've worked with solved this differently. Quick call to compare their approaches before the conference?"
+            "email_body": "Hello Maulin,\n\nLast note on this. Saw OHSU's cost-to-revenue trend has been under pressure for multiple years now, not just FY24. That kind of sustained gap usually means the fixes being explored are structural, not tactical.\n\nAutonomous coding cuts cost to collect by up to 70% and doesn't require renegotiating vendor contracts or restructuring teams. It's a different category of lever than what most finance reviews are looking at.\n\nHappy to share what the model looks like at $4B-plus revenue volume if that's a useful input for anything you're working through right now."
           }
         ]
       },
       "version_b": {
-        "variant_id": "cta_direct",
+        "variant_id": "struct_anti_ai",
+        "subject_line": "something in ohsu's financials caught my attention",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed about CHOP's revenue integrity posture",
-            "email_body": "Hi Kim,\n\nRead your post about the One Big Beautiful Bill Act and its implications for safety-net providers. Your framing on Medicaid underpayment risk was precise.\n\nCHOP's payer mix and complexity make revenue integrity pressure particularly acute. Coding gaps on pediatric specialty claims run 12-15% higher than adult acute care benchmarks.\n\nThat variance compounds fast on CHOP's claim volume.\n\nOpen to a 15-minute call this week?"
+            "email_body": "Hi Maulin,\n\nI was reading about OHSU's numbers, the $110M operating loss, the S&P cut, and its a pattern I've seen at a few academic medical centers where the coding layer is just quietly leaking revenue no one's fully quantified.\n\nNot saying that's what's happening here. But VPs use autonomous coding to bring A/R days down 30% and coding costs down 40%, and at OHSU's scale that math gets interesting fast.\n\nWould it make sense to put 20 minutes on the calendar?"
           },
           {
             "email_number": 2,
-            "subject_line": "a thought about CHOP's HIM and coding accuracy",
-            "email_body": "Hey Kim,\n\nYour Becker's speaking slot on revenue integrity signals you are actively working this problem. A comparable pediatric specialty hospital cut complex case denial rates by 38% in one quarter through automated coding validation.\n\nNo additional HIM staff. The gain came from precision at submission, not downstream recovery.\n\nCan I grab 10 minutes to show you what we found?"
+            "email_body": "Hey Maulin,\n\nI keep thinking about the gap between where OHSU's revenue landed and where expenses went, it's the kind of spread that makes every cost center worth a second look.\n\nThe systems we work with at similar revenue volume are getting coder productivity to 1.7x without adding headcount, accuracy stays above 98%, deploys in eight weeks. Finance teams tend to like that it shows up in the same fiscal year rather than a future cycle.\n\nStill worth the 20 minutes if you're looking at the cycle as part of cost reduction?"
           },
           {
             "email_number": 3,
-            "subject_line": "CHOP revenue integrity - last note",
-            "email_body": "Hello Kim,\n\nYou are a week from Becker's. The pediatric revenue integrity leaders driving measurable outcomes are shifting from reactive denial management to upstream coding precision.\n\nThe window for a Q2 engagement is closing. Last shot: Tuesday or Thursday work for a quick call before the conference?"
+            "email_body": "Hello Maulin,\n\nid be remiss not to send one last note. Saw OHSU's operating losses stretch across multiple years now, not just FY24, and that sustained pressure usually means the levers being pulled are the obvious ones.\n\nCost to collect coming down 70% is a different kind of lever. Doesn't touch contracts, doesn't restructure teams, it's just a better engine running the same claims.\n\nIf it's useful context for anything you're evaluating, happy to share what the model looks like at your volume."
           }
         ]
       }
     },
     {
       "pair_number": 7,
-      "profile_id": "kim_milstien",
-      "person_name": "Kim Milstien",
-      "company_name": "CHOC Children's",
-      "persona_type": "ceo",
-      "dimension": "tone_length",
+      "profile_id": "amy_nachtigal",
+      "person_name": "Amy Nachtigal",
+      "company_name": "Saint Luke's Health System",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Curiosity Arc",
+      "archetype_description": "E1 opens a question, E2 rewards, E3 resolves \u2014 does the sequence feel more compelling? (Calibration pair)",
+      "what_to_notice": "Which version makes you want to open the next email?",
       "version_a": {
-        "variant_id": "tone_conversational",
+        "variant_id": "control",
+        "subject_line": "saint luke's hospital-at-home program",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed at CHOC Children's",
-            "email_body": "Hi Kim,\n\nSaw you shared an opportunity at CHOC and the energy around your team there is pretty clear. Congrats on the COO recognition from Becker's, by the way.\n\nFigured this might be relevant: children's hospitals at CHOC's complexity level tend to leave a surprising amount of revenue on the table from pediatric coding gaps, not from payer mix or contracts.\n\nIt's kind of counterintuitive but usually fixable without adding headcount.\n\nCurious whether CHOC is prioritizing coding accuracy or denial management as the bigger opportunity right now?"
+            "email_body": "Hi Amy,\n\nRead that Saint Luke's hospital-at-home program is pushing toward budget-neutrality and seeking a CMS extension. That's a real financial engineering problem \u2014 a new care model that has to prove it pays for itself before it scales.\n\nAt $3.5B revenue, the margin on that math gets tight fast. One VP Finance at a similar regional health system found the coding layer was quietly bleeding revenue on exactly these newer visit types, where documentation patterns don't fit legacy workflows.\n\nVPs use RapidClaims to cut coding costs by 40% and bring denials down 27%. Is the coding layer part of what's being evaluated as the program expands?"
           },
           {
             "email_number": 2,
-            "subject_line": "a quick thought on CHOC's revenue cycle",
-            "email_body": "Hey Kim,\n\nYou're paneling at the OCBC Health Care Forum on the topic of healthcare operations, which seems like the right venue for what I'm seeing across children's systems.\n\nA comparable pediatric hospital we worked with recovered $2.8M in the first quarter just by fixing coding accuracy on their high-complexity cases. No new staff, no contract renegotiations.\n\nIs claim accuracy something your team is actively benchmarking at CHOC?"
+            "email_body": "Hey Amy,\n\nFollowing up on the hospital-at-home thread. One thing that tends to surprise VPs at health systems this size is how much coding throughput variance shows up across service lines \u2014 accuracy stays high on core inpatient, but newer programs drift.\n\nThe VP Finance I mentioned ran a quick benchmark across their ambulatory and home-based lines. They found coders were processing roughly half the charts per day on newer visit types compared to traditional encounters. That gap compounds fast at scale.\n\nRapidClaims coders process 500 charts per day at 98%+ accuracy across visit types. Worth knowing whether that benchmark holds at Saint Luke's?"
           },
           {
             "email_number": 3,
-            "subject_line": "CHOC Children's - one last thought",
-            "email_body": "Hello Kim,\n\nLast one. The COOs at children's hospitals I see moving the revenue needle fastest are the ones treating coding accuracy as an ops problem, not a billing problem.\n\nWe've helped three comparable pediatric systems recover 3-5% of annual net revenue. We've got room for one more partnership this quarter.\n\nWould it help to see how similar orgs approached this?"
+            "email_body": "Hello Amy,\n\nLast note on this. The VP Finance I mentioned earlier ended up pulling two planned coding hires after the benchmark ran. The full picture: 40% reduction in coding costs, A/R days down 30% in the first quarter, and the hospital-at-home line finally penciling out on its own.\n\nFor a program trying to prove budget-neutrality to CMS, that's not a nice-to-have. It's the difference between a pilot that gets extended and one that doesn't.\n\nIf it's useful, I can pull together a quick comparison against what Saint Luke's is currently running. Worth a conversation?"
           }
         ]
       },
       "version_b": {
-        "variant_id": "tone_standard",
+        "variant_id": "struct_curiosity",
+        "subject_line": "a question about saint luke's revenue cycle",
         "emails": [
           {
             "email_number": 1,
-            "subject_line": "something we noticed at CHOC Children's",
-            "email_body": "Hi Kim,\n\nRead your post about the open opportunity at CHOC Children's. The level of investment in growing the team reflects the operational ambition you've described publicly.\n\nChildren's hospitals at CHOC's complexity level often leave significant revenue uncaptured through pediatric coding gaps, independent of payer mix or contract performance.\n\nThat gap is typically addressable without adding headcount or renegotiating contracts.\n\nCurious whether CHOC is prioritizing coding accuracy improvements or denial rate reduction as the primary revenue integrity focus this year?"
+            "email_body": "Hi Amy,\n\nRead about Saint Luke's hospital-at-home program pushing toward budget-neutrality. That's a specific kind of financial pressure \u2014 proving a new care model pays for itself before CMS commits to a 5-year extension.\n\nHere's what I'm curious about: a regional health system at roughly the same scale ran that same analysis and found a gap they weren't looking for \u2014 not in operations, not in staffing. It was somewhere most finance leaders don't think to look first.\n\nI won't bury the lead forever. But I'm curious \u2014 when Saint Luke's models budget-neutrality for the program, what's the biggest variable that feels hardest to control right now?"
           },
           {
             "email_number": 2,
-            "subject_line": "a thought about CHOC Children's revenue integrity",
-            "email_body": "Hey Kim,\n\nYour upcoming panel at the OCBC Health Care Forum on healthcare operations is well-timed. Revenue integrity is becoming a board-level conversation at children's systems facing Medicaid pressure.\n\nA comparable pediatric hospital improved first-pass claim rates from 81% to 95% and recovered $2.8M in the first quarter. The approach focused on coding accuracy at the point of submission on high-complexity pediatric cases.\n\nIs first-pass rate benchmarking something your operations team actively monitors at CHOC?"
+            "email_body": "Hey Amy,\n\nSince I mentioned that health system finding a gap they weren't expecting \u2014 here's what actually happened.\n\nTheir finance team had assumed coding accuracy was consistent across service lines. It wasn't. Home-based and newer visit types were running at a meaningfully lower capture rate than core inpatient, and nobody had looked at it because the volume was smaller. At scale, the revenue drag was significant.\n\nThey weren't understaffed. The coders were experienced. It was a workflow and throughput problem, not a headcount problem.\n\nThat's the part most VP Finance teams miss until they run the benchmark. Does that pattern sound familiar at Saint Luke's?"
           },
           {
             "email_number": 3,
-            "subject_line": "CHOC Children's - one conversation before Q2 ends",
-            "email_body": "Hello Kim,\n\nThe children's hospital COOs I see driving consistent margin improvement share one operational trait: they treat coding accuracy as a core ops metric, not a billing department function.\n\nThree comparable pediatric systems have recovered 3-5% of annual net revenue through this approach, without adding staff. We have capacity for one new system partnership this quarter.\n\nWould it help to see how similar organizations structured that recovery?"
-          }
-        ]
-      }
-    },
-    {
-      "pair_number": 8,
-      "profile_id": "kim_bussie",
-      "person_name": "Kim Bussie",
-      "company_name": "Children's Hospital of Philadelphia",
-      "persona_type": "director",
-      "dimension": "compliance_footer",
-      "version_a": {
-        "variant_id": "footer_none",
-        "emails": [
-          {
-            "email_number": 1,
-            "subject_line": "something we noticed about CHOP's revenue integrity",
-            "email_body": "Hi Kim,\n\nRead your post about the One Big Beautiful Bill Act and its Medicaid implications for safety-net providers. Your analysis of the downstream revenue risk was sharp.\n\nCHOP's pediatric specialty case mix generates coding complexity that most revenue integrity benchmarks undercount. Gaps on high-complexity pediatric claims average 12-15% above adult acute care.\n\nOn CHOP's claim volume, that translates to meaningful uncaptured revenue.\n\nCurious whether CHOP is prioritizing upstream coding accuracy or downstream denial recovery as the primary focus right now?"
-          },
-          {
-            "email_number": 2,
-            "subject_line": "a thought about CHOP's HIM operations",
-            "email_body": "Hey Kim,\n\nYou are presenting at Becker's on revenue integrity. The pediatric revenue leaders I see achieving the best outcomes are shifting the intervention point from denial recovery to claim submission accuracy.\n\nA comparable children's hospital cut complex case denial rates by 38% and reduced HIM rework by 40% in one quarter through coding validation at submission.\n\nIs rework volume on complex pediatric cases something your team is actively measuring?"
-          },
-          {
-            "email_number": 3,
-            "subject_line": "CHOP revenue integrity - direct question",
-            "email_body": "Hello Kim,\n\nWith Becker's next week, the conversations most worth having are the ones that tie directly to measurable outcomes.\n\nWe have capacity for one new engagement with a children's hospital system this quarter. Three comparable organizations moved forward in Q1 and are already seeing first-pass rate improvements.\n\nWould it help to see how those organizations approached the business case for this?"
+            "email_body": "Hello Amy,\n\nOne thing I didn't mention: after they fixed the coding layer, the hospital-at-home program hit budget-neutrality six months earlier than projected. That changed the CMS conversation entirely.\n\nThe full picture: coding costs down 40%, A/R days down 30% in the first quarter, denials down 27%. The coders processing 500 charts per day at 98%+ accuracy across visit types, including the newer ones that had been dragging.\n\nFor a program that needs to prove itself financially, that's the lever most teams overlook until it's already costing them.\n\nWould it be useful to run the same benchmark against what Saint Luke's is seeing today?"
           }
         ]
       },
-      "version_b": {
-        "variant_id": "footer_pilot",
-        "emails": [
-          {
-            "email_number": 1,
-            "subject_line": "something we noticed about CHOP's revenue integrity",
-            "email_body": "Hi Kim,\n\nRead your post about the One Big Beautiful Bill Act and its Medicaid implications for safety-net providers. Your analysis of the downstream revenue risk was sharp.\n\nCHOP's pediatric specialty case mix generates coding complexity that most revenue integrity benchmarks undercount. Gaps on high-complexity pediatric claims average 12-15% above adult acute care.\n\nOn CHOP's claim volume, that translates to meaningful uncaptured revenue.\n\nCurious whether CHOP is prioritizing upstream coding accuracy or downstream denial recovery as the primary focus right now?\n\nP.S. - We offer a free 30-day pilot with your actual claims."
-          },
-          {
-            "email_number": 2,
-            "subject_line": "a thought about CHOP's HIM operations",
-            "email_body": "Hey Kim,\n\nYou are presenting at Becker's on revenue integrity. The pediatric revenue leaders I see achieving the best outcomes are shifting the intervention point from denial recovery to claim submission accuracy.\n\nA comparable children's hospital cut complex case denial rates by 38% and reduced HIM rework by 40% in one quarter through coding validation at submission.\n\nIs rework volume on complex pediatric cases something your team is actively measuring?"
-          },
-          {
-            "email_number": 3,
-            "subject_line": "CHOP revenue integrity - direct question",
-            "email_body": "Hello Kim,\n\nWith Becker's next week, the conversations most worth having are the ones that tie directly to measurable outcomes.\n\nWe have capacity for one new engagement with a children's hospital system this quarter. Three comparable organizations moved forward in Q1 and are already seeing first-pass rate improvements.\n\nWould it help to see how those organizations approached the business case for this?"
-          }
-        ]
-      }
-    },
-    {
-      "pair_number": 9,
-      "profile_id": "kim_bussie",
-      "person_name": "Kim Bussie",
-      "company_name": "Children's Hospital of Philadelphia",
-      "persona_type": "director",
-      "dimension": "opening_hook",
-      "version_a": {
-        "variant_id": "hook_linkedin",
-        "emails": [
-          {
-            "email_number": 1,
-            "subject_line": "something we noticed about CHOP's revenue integrity approach",
-            "email_body": "Hi Kim,\n\nRead your post about the One Big Beautiful Bill Act and how it puts safety-net providers in a structurally difficult revenue position. That framing of Medicaid policy risk as a revenue integrity issue, not just a policy issue, is exactly right.\n\nCHOP's payer mix amplifies that exposure. Pediatric specialty coding gaps average 12-15% higher denial rates than adult acute benchmarks.\n\nCurious whether CHOP is prioritizing upstream coding accuracy or payer-specific denial patterns as the more pressing gap right now?"
-          },
-          {
-            "email_number": 2,
-            "subject_line": "a thought about CHOP's coding and HIM accuracy",
-            "email_body": "Hey Kim,\n\nYour Becker's speaking slot on revenue integrity and HIM positions you as a benchmark for other children's systems working through the same pressure.\n\nA comparable children's hospital we supported reduced complex case denial rates by 38% and HIM rework volume by 40% in under 90 days. The intervention was coding validation at claim submission, not downstream recovery.\n\nIs rework volume on complex pediatric cases something your team tracks as a formal KPI?"
-          },
-          {
-            "email_number": 3,
-            "subject_line": "CHOP revenue integrity - last note",
-            "email_body": "Hello Kim,\n\nWith Becker's days away, the revenue integrity leaders making the most progress are those who have moved coding accuracy from a back-office metric to an operational priority.\n\nWe have capacity for one new children's hospital engagement this quarter. Three comparable organizations who moved forward in Q1 are reporting measurable first-pass rate gains.\n\nWould it help to see how similar orgs approached this before the conference?"
-          }
-        ]
-      },
-      "version_b": {
-        "variant_id": "hook_financial",
-        "emails": [
-          {
-            "email_number": 1,
-            "subject_line": "something we noticed about CHOP's revenue integrity approach",
-            "email_body": "Hi Kim,\n\nGiven CHOP's position as a major children's academic medical center with a payer mix heavily weighted toward Medicaid and complex specialty cases, the revenue integrity exposure from coding gaps is structurally higher than most peer benchmarks reflect.\n\nPediatric specialty claim denial rates average 12-15% above adult acute care, and that delta compounds on CHOP's case volume.\n\nCurious whether CHOP is prioritizing upstream coding accuracy or payer-specific denial patterns as the more pressing revenue integrity gap right now?"
-          },
-          {
-            "email_number": 2,
-            "subject_line": "a thought about CHOP's coding and HIM accuracy",
-            "email_body": "Hey Kim,\n\nYour Becker's speaking slot on revenue integrity and HIM signals active focus on this area. A comparable children's hospital reduced complex case denial rates by 38% and HIM rework volume by 40% in under 90 days.\n\nThe intervention was coding validation at claim submission. The financial return was visible within the first billing cycle.\n\nIs rework volume on complex pediatric cases something your team tracks as a formal revenue integrity KPI?"
-          },
-          {
-            "email_number": 3,
-            "subject_line": "CHOP revenue integrity - last note",
-            "email_body": "Hello Kim,\n\nWith Becker's days away, the revenue integrity leaders moving the needle are treating coding accuracy as an operational priority, not a billing department issue.\n\nWe have capacity for one new children's hospital engagement this quarter. Three comparable organizations who moved forward in Q1 are reporting measurable first-pass rate gains.\n\nWould it help to see how similar orgs approached this before the conference?"
-          }
-        ]
-      }
-    },
-    {
-      "pair_number": 10,
-      "profile_id": "john_campanelli",
-      "person_name": "John Campanelli",
-      "company_name": "MetroHealth",
-      "persona_type": "ceo_cfo",
-      "dimension": "cta_style",
-      "version_a": {
-        "variant_id": "cta_soft",
-        "emails": [
-          {
-            "email_number": 1,
-            "subject_line": "something we noticed at metrohealth",
-            "email_body": "Hi John,\n\nRead your post about MetroHealth's Trauma System 101 Community Town Hall. The outreach work at MetroHealth reflects a system investing in community trust alongside clinical excellence.\n\nMetroHealth is projecting a $31.2M budget shortfall in 2026, down from $48.3M in 2025. That improvement is real progress, but $446M in charity care puts sustained pressure on revenue cycle margins.\n\nWe work with health systems facing that exact tension between mission and margin.\n\nWould it make sense to explore how others have navigated this?"
-          },
-          {
-            "email_number": 2,
-            "subject_line": "a thought on metrohealth's margin path",
-            "email_body": "Hey John,\n\nMetroHealth's charity care costs have doubled since 2022, now exceeding $1M per day. With county subsidies declining and Medicaid uncertainty growing, the margin on insured patient revenue has to carry more weight.\n\nWe've seen health systems in comparable positions recover 15-20% more on professional claims by addressing coding throughput, without adding billing staff.\n\nIf this resonates, happy to share more on what that looked like for a similar-size system."
-          },
-          {
-            "email_number": 3,
-            "subject_line": "metrohealth's revenue cycle and what's next",
-            "email_body": "Hello John,\n\nMetroHealth is navigating $50M in 2024 operating losses while investing in Magnet-level nursing, ED renovations, and new outpatient expansion. That's a system under financial strain while simultaneously growing.\n\nSystems in that position need revenue cycle efficiency to scale without proportional cost increases. We've mapped exactly this dynamic for organizations like MetroHealth.\n\nNo worries either way, but figured it was worth flagging given what's on your plate in 2026."
-          }
-        ]
-      },
-      "version_b": {
-        "variant_id": "cta_deliverable",
-        "emails": [
-          {
-            "email_number": 1,
-            "subject_line": "something we noticed at metrohealth",
-            "email_body": "Hi John,\n\nRead your post about MetroHealth's Trauma System 101 Community Town Hall. The community trust MetroHealth is building sits alongside a $31.2M projected shortfall in 2026.\n\nMost health systems in this position underestimate how much revenue cycle inefficiency is amplifying the gap. $446M in charity care compresses margin on every covered claim you do collect.\n\nWe've built a framework for health systems navigating this specific tension.\n\nWorth sending over our revenue cycle efficiency benchmark report for safety-net systems?"
-          },
-          {
-            "email_number": 2,
-            "subject_line": "a framework for metrohealth's margin challenge",
-            "email_body": "Hey John,\n\nMetroHealth's charity care costs doubled since 2022. With county subsidies declining from $35M to $32M in 2026, insured revenue cycle performance carries the entire margin story.\n\nWe put together a revenue recovery playbook specifically for public/safety-net health systems managing $400M+ in uncompensated care. It covers coding automation, denial patterns, and AR velocity benchmarks.\n\nWe put together this playbook for health systems like MetroHealth. Want a copy?"
-          },
-          {
-            "email_number": 3,
-            "subject_line": "what a comparable system did with this",
-            "email_body": "Hello John,\n\nA safety-net health system with a comparable charity care burden used our AR recovery breakdown to identify $8M in recoverable revenue they had essentially written off. No new staff, no new contracts.\n\nGiven MetroHealth's 2026 budget constraints and the $31.2M shortfall, that kind of recovery changes the margin math meaningfully.\n\nHappy to share the breakdown we used with that peer organization."
-          }
-        ]
-      }
-    },
-    {
-      "pair_number": 11,
-      "profile_id": "april_taylor",
-      "person_name": "April Taylor",
-      "company_name": "Johns Hopkins Hospital",
-      "persona_type": "ceo",
-      "dimension": "subject_line",
-      "version_a": {
-        "variant_id": "subj_direct",
-        "emails": [
-          {
-            "email_number": 1,
-            "subject_line": "april's coding throughput at johns hopkins",
-            "email_body": "Hi April,\n\nRead your post about speaking to an international audience on healthcare operations. Your work bridging quality and operational excellence at Hopkins is clear.\n\nHospitals at Hopkins' scale typically have coding throughput gaps that sit invisible inside otherwise strong operational metrics. The larger the system, the harder it is to see where revenue cycle velocity is slowing.\n\nWe work with COOs at academic medical centers to surface exactly these gaps.\n\nCurious whether Hopkins is prioritizing coding accuracy or throughput speed right now?"
-          },
-          {
-            "email_number": 2,
-            "subject_line": "april's revenue cycle velocity at jhmi",
-            "email_body": "Hey April,\n\nYour ACHE service recognition and EIR role at Pitt Public Health signal a leader focused on system-level change, not just operational maintenance.\n\nAt AMCs like Hopkins, coding backlogs quietly compound. A 5% denial rate on inpatient volume at your scale represents tens of millions annually. Most COOs don't see it until quarter-end.\n\nWe've helped similar organizations reduce denials by 20%+ and cut coding lag by 30%.\n\nIs coding capacity something your revenue cycle team is actively measuring?"
-          },
-          {
-            "email_number": 3,
-            "subject_line": "johns hopkins' revenue cycle gap",
-            "email_body": "Hello April,\n\nAcademic medical centers consistently leave revenue on the table in professional coding due to volume and complexity. Hopkins runs one of the highest-acuity patient mixes in the country.\n\nWe have a breakdown of how comparable AMCs closed their coding gaps without adding FTEs. Given your operational focus and what you've built at Hopkins, I think it maps directly to your situation.\n\nWould it help to see how similar organizations approached this?"
-          }
-        ]
-      },
-      "version_b": {
-        "variant_id": "subj_pain",
-        "emails": [
-          {
-            "email_number": 1,
-            "subject_line": "johns hopkins + coding capacity",
-            "email_body": "Hi April,\n\nRead your post about speaking to an international audience on healthcare leadership. Your operational lens at Hopkins is evident.\n\nAcademic medical centers at Hopkins' scale face a structural coding capacity problem: patient complexity outpaces coder bandwidth, and denials compound silently. High-acuity case mix means every missed code has outsized revenue impact.\n\nWe work with COOs at similar AMCs to close that gap without adding headcount.\n\nCurious whether Hopkins is prioritizing coding accuracy or throughput capacity right now?"
-          },
-          {
-            "email_number": 2,
-            "subject_line": "johns hopkins + staffing gaps in revenue cycle",
-            "email_body": "Hey April,\n\nYour ACHE award and EIR role signal a systems thinker. Most COOs at AMCs don't discover their coding staffing gap until it shows up as a denial trend, by then it's 60-90 days behind.\n\nWe've documented that AMCs similar to Hopkins recover 15-20% more on complex inpatient claims when coding throughput is automated at the back end.\n\nIs revenue cycle staffing coverage something your team is actively tracking right now?"
-          },
-          {
-            "email_number": 3,
-            "subject_line": "johns hopkins + claim lag",
-            "email_body": "Hello April,\n\nHigh-complexity AMCs routinely lose 3-5% of net revenue to claim lag and coding backlog, not denial management. It's the quieter leak.\n\nWe've worked with COOs at comparable systems to cut coding lag by 30% and improve clean claim rates measurably. Given what you've built operationally at Hopkins, this maps directly to your priorities.\n\nWould it help to see how similar organizations closed this specific gap?"
-          }
-        ]
-      }
-    },
-    {
-      "pair_number": 12,
-      "profile_id": "alan_waites",
-      "person_name": "Alan Waites",
-      "company_name": "Pratt Regional Medical Center",
-      "persona_type": "ceo_cfo",
-      "dimension": "sequence_flow",
-      "version_a": {
-        "variant_id": "seq_angle_shift",
-        "emails": [
-          {
-            "email_number": 1,
-            "subject_line": "something we noticed at pratt regional",
-            "email_body": "Hi Alan,\n\nPRMC just turned a profitable quarter after nearly a decade of losses, and the county pulled back its lease termination notice. That reversal signals real momentum.\n\nMost rural critical access hospitals in that position still carry $11M+ in aging AR. If that backlog persists, it offsets every operational gain you've made.\n\nWe work with CFOs at similarly-sized sole community providers to recover revenue from accounts 90+ days past due without adding headcount.\n\nCurious whether PRMC is prioritizing AR recovery or cost containment right now?"
-          },
-          {
-            "email_number": 2,
-            "subject_line": "a thought on your path forward, alan",
-            "email_body": "Hey Alan,\n\nYour press quote on PRMC's stabilization plan stood out. As CFO navigating a decade of losses while managing Medicare and Medicaid reimbursement compression, the margin for error is near zero.\n\nLeaders in your seat typically face a compounding problem: the staff capacity to chase denials and aging AR shrinks right when the volume matters most.\n\nWe've helped CFOs recover 15-20% of write-off-ready AR with no upfront cost.\n\nIs reducing that $11M AR backlog something you're actively working on this quarter?"
-          },
-          {
-            "email_number": 3,
-            "subject_line": "what other rural hospital cfos are doing",
-            "email_body": "Hello Alan,\n\nOther CFOs at sole community providers in the Midwest facing similar reimbursement pressure have shifted AR recovery from a staffing problem to a technology problem. The ones seeing results are capturing 20-30% more on accounts they had essentially written off.\n\nWith PRMC's hiring freeze still in place, adding coding or billing staff isn't viable. But autonomous AR recovery doesn't require headcount.\n\nWould it help to see how a comparable rural hospital approached this?"
-          }
-        ]
-      },
-      "version_b": {
-        "variant_id": "seq_same_thread",
-        "emails": [
-          {
-            "email_number": 1,
-            "subject_line": "something we noticed at pratt regional",
-            "email_body": "Hi Alan,\n\nPRMC has $11M+ in AR more than 90 days past due over the last two years. For a 35-bed hospital running on thin margins after a decade of losses, that backlog is material.\n\nDecreased Medicare and Medicaid reimbursement rates plus low utilization makes revenue cycle efficiency the one lever that doesn't require volume growth.\n\nWe work with CFOs at similar-sized facilities on exactly this challenge.\n\nCurious whether PRMC is prioritizing AR recovery or reducing denials at the front end?"
-          },
-          {
-            "email_number": 2,
-            "subject_line": "digging deeper into pratt regional's ar challenge",
-            "email_body": "Hey Alan,\n\nThe $11M AR backlog at PRMC compounds in a specific way: accounts past 90 days have recovery rates that drop 30-40% each additional month. At current Medicare/Medicaid reimbursement rates, write-offs accelerate faster than new revenue can offset them.\n\nFacilities your size with a hiring freeze can't add billing staff. The math only works if recovery becomes more efficient per claim, not per person.\n\nIs this kind of AR aging curve something your team is actively modeling?"
-          },
-          {
-            "email_number": 3,
-            "subject_line": "a specific recommendation for prmc",
-            "email_body": "Hello Alan,\n\nFor a sole community provider at PRMC's scale, the highest-ROI move is autonomous coding and claim re-processing on the 90+ day bucket. Facilities similar to yours have recovered 15-25% of accounts that were queued for write-off, without adding staff.\n\nGiven PRMC's profitable last quarter and the county's renewed commitment, this is the window to convert AR momentum into sustained margin.\n\nWould it help to see how similar organizations approached this specifically?"
-          }
-        ]
-      }
+      "is_calibration": true
     }
   ]
 }
