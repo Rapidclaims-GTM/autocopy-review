@@ -107,10 +107,10 @@ function renderPair(index) {
     `<strong>${pair.person_name}</strong> &middot; ${pair.persona_type} &middot; ${pair.company_name}`;
 
   // Render emails for Version A
-  renderEmails('emails-a', pair.version_a.emails);
+  renderEmails('emails-a', pair.version_a.emails, pair.version_a.subject_line);
 
   // Render emails for Version B
-  renderEmails('emails-b', pair.version_b.emails);
+  renderEmails('emails-b', pair.version_b.emails, pair.version_b.subject_line);
 
   // Reset vote UI
   document.querySelectorAll('.vote-btn').forEach(b => b.classList.remove('selected'));
@@ -129,22 +129,27 @@ function renderPair(index) {
   document.querySelector('.compare-body')?.scrollTo(0, 0);
 }
 
-function renderEmails(containerId, emails) {
+function renderEmails(containerId, emails, subjectLine) {
   const container = document.getElementById(containerId);
   container.innerHTML = '';
 
-  emails.forEach(email => {
+  emails.forEach((email, index) => {
     const card = document.createElement('div');
     card.className = 'email-card';
 
     const wordCount = email.email_body ? email.email_body.split(/\s+/).length : 0;
+
+    // Subject line only on Email 1; emails 2-3 are threaded replies
+    const subjectHtml = index === 0 && subjectLine
+      ? `<div class="email-subject"><span class="subject-label">Subject:</span> ${escapeHtml(subjectLine)}</div>`
+      : `<div class="email-subject email-subject-thread">↩ threaded reply</div>`;
 
     card.innerHTML = `
       <div class="email-card-header">
         <span class="email-number">Email ${email.email_number}</span>
         <span class="email-word-count">${wordCount} words</span>
       </div>
-      <div class="email-subject">${escapeHtml(email.subject_line)}</div>
+      ${subjectHtml}
       <div class="email-body">${escapeHtml(email.email_body)}</div>
     `;
 
