@@ -4,13 +4,68 @@
 
 We use the same ranking system as chess (Elo) to find the best email approaches. Every time a reviewer picks Version A over Version B, both variants' ratings update — the winner gains points, the loser drops.
 
-After enough comparisons, the best approaches naturally rise to the top.
+After enough comparisons, the best approaches naturally rise to the top, and those approaches become hardcoded rules for all future email generation.
 
 ## What's Being Ranked
 
-We test **42 variants** across **8 dimensions** of an email sequence:
+**51 variants across 9 dimensions**, tested in 3 phases over ~11 days.
 
-### 1. Subject Line (9 variants)
+---
+
+## Phase 1 — Style Archetypes
+
+Tested first because structure has the highest impact. Reviewers see 6 obviously different styles vs. the current control.
+
+### Email Structure (7 variants)
+
+| Variant | Pattern | What makes it different |
+|---------|---------|------------------------|
+| THE ONE (control) | Observation → Hypothesis → Impact → CTA | Current style — 80-100w paragraphs |
+| Curiosity overlay | Open loop → Reward → Resolve | E1 raises a question it doesn't answer; E2-3 pay it off |
+| Peer story | Scenario → Surprising outcome → Bridge to them | Each email built around an anonymized peer |
+| Direct value prop | Problem → Solution → Proof → CTA | No narrative, pure value delivery |
+| Bullet-point format | Hook → 2-3 metric bullets → CTA | Scannable, metric-heavy |
+| Bold key phrases | Paragraphs with **bold metrics** | Mobile-first readability |
+| Anti-AI human signal | Best signal, broken formula, one typo per email | Sounds typed not generated |
+
+---
+
+## Phase 2 — Curiosity Decision
+
+One question: does adding a curiosity loop (E1 teases, E2 rewards, E3 resolves) lift the Phase 1 winner? Skip if `curiosity_arc` already won Phase 1.
+
+---
+
+## Phase 3 — Dimension Drilling
+
+Within the winning style, test one dimension at a time. Priority order:
+
+| Day | Dimension | Variants |
+|-----|-----------|----------|
+| 5 | Opening hook | 7 |
+| 6 | Subject line | 12 |
+| 7 | CTA style | 5 |
+| 8 | Sequence flow | 4 |
+| 9 | Branding | 4 |
+| 10 | Compliance footer | 4 |
+| 11 | Human signals | 3 |
+
+---
+
+### Opening Hook (7 variants)
+
+| Variant | Opens with... |
+|---------|--------------|
+| LinkedIn post | Reference to their specific LinkedIn post |
+| Company signal | Observation about their company (hiring, news, expansion) |
+| Industry trend | Macro trend bridged to their situation |
+| Hiring signal | Their specific job posting |
+| Financial signal | Their revenue, margins, or funding data |
+| Peer comparison | Anonymous story from a similar organization |
+| Timeline / sequence | Chain of events at their company that creates natural urgency |
+
+### Subject Line (12 variants)
+
 | Variant | Style | Example |
 |---------|-------|---------|
 | Curiosity loop | Hints without revealing | "something we noticed at {company}" |
@@ -22,18 +77,12 @@ We test **42 variants** across **8 dimensions** of an email sequence:
 | First name + hook | Prospect's name first | "alexandra, quick thought" |
 | Trigger-event | References specific recent event | "saw accesshealth's expansion into county 3" |
 | Re: fake thread | Mimics a reply thread | "re: coding capacity" |
+| Competitor name-drop | Names a known competitor | "beyond what nuance can do at {company}" |
+| Contrarian | Challenges conventional wisdom | "why hiring more coders makes denials worse" |
+| Fake internal forward | Looks like an internal fwd | "fwd: rcm vendor shortlist" |
 
-### 2. Opening Hook (6 variants)
-| Variant | Opens with... |
-|---------|--------------|
-| LinkedIn post | Reference to their specific LinkedIn post |
-| Company signal | Observation about their company (hiring, news) |
-| Industry trend | Macro trend bridged to their situation |
-| Hiring signal | Their specific job posting |
-| Financial signal | Their revenue, margins, or funding data |
-| Peer comparison | Anonymous story from a similar organization |
+### CTA Style (5 variants)
 
-### 3. CTA Style (5 variants)
 | Variant | Approach |
 |---------|----------|
 | Challenge question | Ask about their business challenge |
@@ -42,25 +91,18 @@ We test **42 variants** across **8 dimensions** of an email sequence:
 | Soft landing | Low-pressure, non-committal |
 | Direct ask | Clear meeting request |
 
-### 4. Tone/Length (4 variants)
+### Tone/Length (5 variants)
+
 | Variant | Words per email | Feel |
 |---------|----------------|------|
 | Executive brief | 55-70 | Authoritative, numbers-driven |
 | Balanced | 80-100 | Professional but warm |
 | Data-rich detailed | 100-120 | Thorough, analytical |
 | Conversational | 70-90 | Casual, like a colleague |
+| Ultra-short | 45-65 | One observation, one proof, one CTA |
 
-### 5. Email Structure (6 variants)
-| Variant | Pattern |
-|---------|---------|
-| THE ONE | Observation → Hypothesis → Impact → CTA |
-| Curiosity overlay | Open loop → Reward → Resolve |
-| Peer story | Scenario → Surprising outcome → Bridge to them |
-| Direct value prop | Problem → Solution → Proof → CTA |
-| Bullet-point format | Hook sentence → 2-3 scannable bullet points → CTA |
-| Bold key phrases | Paragraph format with **bold metrics** for mobile readability |
+### Sequence Flow (4 variants)
 
-### 6. Sequence Flow (4 variants)
 | Variant | How E1 → E2 → E3 connect |
 |---------|--------------------------|
 | Escalating | Light touch → Value-add → Direct ask |
@@ -68,13 +110,41 @@ We test **42 variants** across **8 dimensions** of an email sequence:
 | Angle shift | Company angle → Individual angle → Peer angle |
 | Same thread | Same topic, going deeper each time |
 
+### Branding (4 variants)
+
+| Variant | Approach |
+|---------|----------|
+| No company name | Only "we" / "our team" / "I". No brand, no product name. |
+| Subtle team reference | "Our team" + generic "autonomous coding technology". No RapidClaims. |
+| RapidClaims named | RapidClaims mentioned once in Email 1. Emails 2-3 use "we". |
+| RapidClaims + product | "RapidClaims autonomous coding" named throughout. |
+
+### Compliance Footer (4 variants)
+
+| Variant | What's added |
+|---------|-------------|
+| No P.S. | Clean ending — CTA is the last line |
+| Compliance P.S. | "P.S. — We are HITRUST, SOC II, and HIPAA Compliant" on all 3 emails |
+| Free pilot P.S. | "P.S. — We offer a free 30-day pilot with your actual claims" on Email 1 only |
+| Compliance + pilot | Pilot P.S. on Email 1, Compliance P.S. on Email 2, none on Email 3 |
+
+### Human Signals (3 variants)
+
+Tests which anti-AI technique drives the most replies. AI flooded inboxes with perfectly structured, soulless emails — being intentionally imperfect now stands out.
+
+| Variant | What it isolates |
+|---------|-----------------|
+| Intentional typo only | One casual typo per email (missing apostrophe, comma splice, lowercase "im") on control style |
+| Anti-formula structure only | Breaks O → H → I → CTA without any typos — lets email meander naturally |
+| Both combined | Broken structure + one typo per email — full anti-AI treatment |
+
 ---
 
 ## How Elo Math Works
 
 Every variant starts at **Elo 1500**.
 
-When two variants compete in a comparison:
+When two variants compete:
 
 1. **Calculate expected outcome** based on current ratings:
    ```
@@ -86,39 +156,18 @@ When two variants compete in a comparison:
    ```
    New_Rating = Old_Rating + 32 × (Actual - Expected)
    ```
-   - If the favorite (A) wins: small gain for A, small loss for B
-   - If the underdog (B) wins: big gain for B, big loss for A
+   - Favorite wins: small gain for A, small loss for B
+   - Underdog wins: big gain for B, big loss for A
    - Tie: both move slightly toward each other
 
-3. **K-factor = 32** means ratings move quickly (good for our small sample sizes). In chess, K=32 is used for new players to help their rating converge fast.
+3. **K-factor = 32** — ratings move quickly, good for small sample sizes.
 
 ### Example
 
 | | Before | After (A wins) | After (B wins) |
 |--|--------|----------------|----------------|
-| Variant A (Elo 1550) | Expected: 57% | 1550 + 32×0.43 = **1564** | 1550 - 32×0.57 = **1532** |
-| Variant B (Elo 1480) | Expected: 43% | 1480 - 32×0.43 = **1466** | 1480 + 32×0.57 = **1498** |
-
-Upsets cause bigger rating swings than expected wins.
-
----
-
-## How Comparisons Are Structured
-
-Each comparison varies **one dimension only**. Everything else is held constant.
-
-Example: Testing subject lines for Alexandra Charlton (Director, AccessHealth)
-
-| | Version A | Version B |
-|--|-----------|-----------|
-| **Subject** | "something we noticed at accesshealth" (curiosity) | "accesshealth's approach to denials?" (question) |
-| Hook | Her LinkedIn post about RCM challenges | Same |
-| CTA | Challenge question style | Same |
-| Tone | Balanced (80-100 words) | Same |
-| Structure | THE ONE framework | Same |
-| Flow | Escalating commitment | Same |
-
-This isolation means when a reviewer picks A, we know it's the **subject line** that made the difference — not the hook or CTA.
+| Variant A (Elo 1550) | Expected: 57% | **1564** | **1532** |
+| Variant B (Elo 1480) | Expected: 43% | **1466** | **1498** |
 
 ---
 
@@ -129,61 +178,32 @@ A variant is declared a **confident winner** when:
 - **15+ total comparisons** (enough data)
 - **60%+ win rate** (consistent preference)
 
-When all three conditions are met, that variant's approach becomes a recommended rule for future email generation.
-
----
-
-## Convergence
-
-The tournament is "solved" when:
-- All 6 dimensions have a confident winner
-- Top variant's Elo is stable (< 20 point change over 2 days)
-- Reviewers start picking "too close to call" more often
-
-**Expected timeline**: 3-5 days with 7 reviewers doing 12 comparisons/day.
+That variant's approach becomes a locked baseline for all future generation.
 
 ---
 
 ## Daily Progression
 
 ```
-Day 1 (Exploration):    All variants at ~1500. Random matchups.
-                        First preferences emerge.
+Phase 1 (Days 1-3):   6 archetypes vs. control. 49 comparisons/day.
+                      Structure winner emerges by Day 3.
 
-Day 2 (Emerging):       Early leaders at 1550-1600. Laggards at 1400-1450.
-                        Test close matchups to separate contenders.
+Phase 2 (Day 4):      Curiosity overlay decision. 84 comparisons.
 
-Day 3 (Clarifying):     2-3 dimensions have confident winners.
-                        Focus remaining comparisons on undecided dimensions.
+Phase 3 (Days 5-11):  One dimension per day. 84 comparisons/day.
+                      Rules applied as each dimension converges.
 
-Day 4 (Converging):     5-6 dimensions decided. Final refinement.
-                        Rules proposed and applied.
-
-Day 5 (Solved):         All dimensions have confident winners.
-                        Optimal email approach locked in.
+Day 11 (Solved):      All 9 dimensions have confident winners.
+                      Every generated email uses the optimal combination.
 ```
-
-### 7. Branding (4 variants)
-| Variant | Approach |
-|---------|----------|
-| No company name | Only "we" / "our team" / "I". No brand, no product name. |
-| Subtle team reference | "Our team" / "my team" + generic "autonomous coding technology". No RapidClaims name. |
-| RapidClaims named | RapidClaims mentioned once in Email 1. Emails 2-3 use "we". |
-| RapidClaims + product | "RapidClaims autonomous coding" named throughout the sequence. |
-
-### 8. Compliance Footer (4 variants)
-| Variant | What's added |
-|---------|-------------|
-| No P.S. | Clean ending — CTA is the last line |
-| Compliance P.S. | "P.S. — We are HITRUST, SOC II, and HIPAA Compliant" on all 3 emails |
-| Free pilot P.S. | "P.S. — We offer a free 30-day pilot with your actual claims" on Email 1 only |
-| Compliance + pilot | Pilot P.S. on Email 1, Compliance P.S. on Email 2, none on Email 3 |
 
 ---
 
 ## Adding New Variants
 
-At any point, new ideas can be added at Elo 1500. They'll naturally compete against established leaders and either rise or fall. Examples:
+At any point, new ideas can be added at Elo 1500. They'll naturally compete against established leaders and either rise or fall. Use `/autocopy add-variant` in Claude Code.
+
+Examples of things worth testing:
 - "What if we drop the greeting entirely?"
-- "What if we use emojis in subject lines?"
 - "What if Email 3 is just one sentence?"
+- "What if we name-drop a specific patient outcome instead of a metric?"

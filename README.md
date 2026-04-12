@@ -6,19 +6,27 @@ Email comparison tool for optimizing outreach copy. Reviewers compare email sequ
 
 1. Open: **https://autocopy-review.vercel.app/**
 2. Tap your name
-3. You'll see 12 email comparisons — two versions of a 3-email sequence side by side
-4. For each pair, pick which sequence would be more likely to get a reply
-5. Optionally tap what stood out (Subject, Hook, CTA, Tone, Flow, Length)
-6. Optionally leave a comment
-7. Takes ~5-8 minutes
+3. Compare email sequences side by side — pick which version you'd be more likely to reply to
+4. Optionally tap what stood out (Subject, Hook, CTA, Tone, Flow, Length)
+5. Optionally leave a comment
+6. Takes ~5-10 minutes depending on the phase
 
 **The comparisons are blind** — you won't know what was changed between versions. Just go with your gut: which one would you reply to?
 
+### How many comparisons per session?
+
+| Phase | Comparisons | What you're comparing |
+|-------|-------------|----------------------|
+| Phase 1 (Days 1-3) | 7 | Full email styles — obviously different approaches |
+| Phase 2 (Day 4) | 12 | Curiosity overlay on/off |
+| Phase 3 (Days 5-11) | 12 | One specific element varied at a time |
+
 ### Tips for Good Feedback
+
 - Read all 3 emails in each version before voting
 - Think about whether the sequence tells a coherent story across emails
 - Consider: would a busy healthcare executive actually read and reply to this?
-- Comments are super valuable — even short ones like "A's subject made me curious" or "B's CTA felt pushy"
+- Comments are super valuable — even short ones like "A's subject made me curious" or "B felt more human"
 
 ---
 
@@ -36,14 +44,13 @@ Email comparison tool for optimizing outreach copy. Reviewers compare email sequ
 /autocopy generate
 ```
 This will:
-- Pull random profiles from your campaign data
-- Generate email variants using real LinkedIn/company signals
-- Create comparison pairs (one dimension varied per pair)
-- Push to GitHub Pages
-- Give you the URL to share with reviewers
+- Pull profiles from your campaign data
+- Generate email variant pairs using real LinkedIn/company signals
+- Create per-reviewer JSON files and push to Vercel
+- Print the URL to share with reviewers
 
 **Share with team:**
-Send the URL. That's it. No login needed.
+Send the URL. No login needed.
 
 **Evening — Collect results:**
 ```
@@ -59,37 +66,60 @@ This will:
 ```
 /autocopy apply
 ```
-Select which proposed rules to save. They'll be appended to the email learnings files and used in future email generation.
+Select which proposed rules to save. They'll be appended to the email learnings files and used in all future email generation.
 
 **Check progress anytime:**
 ```
 /autocopy status
 ```
-Shows current Elo rankings, convergence status, and what's left to test.
+Shows current Elo rankings, convergence status, phase, and what's left to test.
 
-### Other Commands
+### All Commands
 
 | Command | What it does |
 |---------|-------------|
 | `/autocopy init` | First-time setup (webhook URL, source campaigns) |
-| `/autocopy add-variant` | Add a new variant to test |
+| `/autocopy generate` | Generate today's batch and deploy |
+| `/autocopy collect` | Fetch votes, update Elo, propose rules |
+| `/autocopy apply` | Apply approved rule mutations to learnings files |
 | `/autocopy status` | View current rankings and convergence |
+| `/autocopy add-variant` | Add a new variant to test |
+
+### Tournament Phases
+
+**Phase 1 — Style Archetypes (Days 1-3)**
+7 reviewers × 7 comparisons = 49 comparisons/day. Tests 6 whole-email archetypes vs. control:
+- `curiosity_arc` — Opens a loop E1, rewards E2, resolves E3
+- `ultra_short` — 4 sentences, 55-70 words
+- `bullets` — Hook + 2-3 metric bullets + CTA
+- `peer_story` — Built around an anonymized peer's story
+- `bold_scan` — Bold key phrases for mobile readability
+- `anti_ai_human` — Same best signal, one intentional typo per email, formula structure broken
+
+**Phase 2 — Curiosity Decision (Day 4)**
+12 comparisons/reviewer. Does adding a curiosity overlay lift the Phase 1 winner?
+
+**Phase 3 — Dimension Drilling (Days 5-11)**
+12 comparisons/reviewer per day. Tests one dimension at a time: opening hook, subject line, CTA, sequence flow, branding, compliance footer, human signals.
 
 ### Expected Timeline
-- **Day 1-2**: Exploration — all variants tested broadly
-- **Day 3-4**: Exploitation — close matchups refined
-- **Day 5**: Convergence — confident winners in most dimensions
 
-With 7 reviewers doing 12 comparisons/day = 84 comparisons/day = ~14 per dimension/day.
+```
+Day 1-3:  Phase 1 — 6 archetypes vs. control. Winner emerges by Day 3.
+Day 4:    Phase 2 — Curiosity overlay decision.
+Day 5-11: Phase 3 — One dimension per day. Rules locked and applied.
+```
+
+With 7 reviewers doing 7 comparisons in Phase 1 = 49/day. Phase 3 = 84/day.
 
 ---
 
 ## Technical Details
 
 ### Architecture
-- **Frontend**: Static HTML/CSS/JS on GitHub Pages
+- **Frontend**: Static HTML/CSS/JS auto-deployed to Vercel
 - **Backend**: Google Sheets via Apps Script webhook (POST votes, GET results)
-- **Orchestration**: Claude Code `/autocopy` skill (runs on your Claude plan, no API key needed)
+- **Orchestration**: Claude Code `/autocopy` skill
 - **Data**: Per-reviewer JSON files in `data/` folder
 
 ### Data Flow
@@ -97,8 +127,8 @@ With 7 reviewers doing 12 comparisons/day = 84 comparisons/day = ~14 per dimensi
 /autocopy generate
   → Pulls profiles from campaigns/*/input/researched_profiles.csv
   → Generates email variants with real prospect data
-  → Creates data/day_NNN_{reviewer}.json for each reviewer
-  → Pushes to GitHub Pages
+  → Writes data/day_NNN_{reviewer}.json for each reviewer
+  → git push → Vercel auto-deploys
 
 Reviewers vote on the live site
   → Votes POST to Google Apps Script webhook
@@ -108,14 +138,15 @@ Reviewers vote on the live site
   → GET from Apps Script returns all votes
   → Elo scores updated locally in autocopy/variant_pool.json
   → Rule mutations proposed based on confident winners
+  → Winning variants lock in as baseline for next generation
 ```
 
 ### File Structure
 ```
 data/
   latest.json              — Current day number + Elo leaders
-  day_001_prahalad.json    — Prahalad's 12 comparison pairs
-  day_001_rahul.json       — Rahul's 12 comparison pairs
+  day_001_prahalad.json    — Prahalad's comparison pairs
+  day_001_rahul.json       — Rahul's comparison pairs
   ...                      — One file per reviewer per day
 ```
 
