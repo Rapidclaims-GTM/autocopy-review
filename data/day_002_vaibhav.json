@@ -2,7 +2,7 @@
   "day": 2,
   "reviewer": "vaibhav",
   "phase": "style_exploration",
-  "generated_at": "2026-04-15T18:00:00Z",
+  "generated_at": "2026-04-15T07:25:40Z",
   "pairs": [
     {
       "pair_number": 1,
@@ -71,6 +71,106 @@
         "variant_id": "struct_direct",
         "subject_line": "agrace's expansion and coding",
         "email_body": "Hi Carrie, Agrace's Wauwatosa expansion plus the Dementia Village build typically stretches the billing team long before the counties are fully live.\n\nWe help hospice Directors cut coding costs 40% and keep accuracy above 98% during expansions.\n\nOne regional hospice pulled two billing reqs after seeing the numbers.\n\nOpen to a short call this week?"
+      }
+    },
+    {
+      "pair_number": 4,
+      "profile_id": "joe_williford",
+      "person_name": "Joe Williford",
+      "company_name": "Wood County Hospital",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Signal-Crisp",
+      "archetype_description": "Anti-AI opener with an obscure reference and front-loaded typo vs a 3-line signal-led DM-short email. Which feels more human?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_financial",
+        "subject_line": "the 2026 sliding scale update",
+        "email_body": "random one Joe, but the 2026 sliding scale going live on January 15 is the sort of line item nobody writes a memo about.\n\nrunning rev cycle and physician admin at a place that just took a BGCF grant for NourishBG while updating charity tiers means your coding team is the one who has to make the numbers tie out at the claim level.\n\nwhat usually breaks in that setup is not the policy, its the codes.\n\ndont need a reply, just wanted to flag this before your Q2 close."
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_peer_outcome",
+        "subject_line": "wood county's outpatient experience",
+        "email_body": "Joe, the Women's Choice outpatient recognition usually comes with rev cycle teams stretched to match the volume.\n\nOne peer VP cut A/R days 30% without adding coders.\n\nWorth a 15 minute chat?"
+      }
+    },
+    {
+      "pair_number": 5,
+      "profile_id": "joanne_parise",
+      "person_name": "Joanne Parise",
+      "company_name": "Planned Parenthood Mar Monte",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Current Style",
+      "archetype_description": "Anti-AI typed-fast human vs the current THE ONE framework. Which voice earns the reply?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_peer_outcome",
+        "subject_line": "the see project grant",
+        "email_body": "dont know if the S.E.E. Project funding loss is the one that hurts most Joanne, or if its one of the other three.\n\n515 employees, a $50m January 2027 target, and finance running cover on all of it means the coding and billing side of the house is probably the last thing getting attention and the first thing leaking.\n\none VP at a similar sized nonprofit network found that 30% of their A/R days were sitting in coder reviewable claims nobody had cycles for.\n\nif that is a useful conversation ahead of FY26, I am around."
+      },
+      "version_b": {
+        "variant_id": "control",
+        "signal_class": "signal_peer_outcome",
+        "subject_line": "a question about mar monte's fy26 setup",
+        "email_body": "Hi Joanne,\n\nSaw Planned Parenthood Mar Monte is losing $6.5m a month in reimbursable care while standing up a $50m raise target by January 2027, with California's $90m state backfill only partially covering the federal cuts. Finance teams running that kind of double pressure usually find the quietest leaks in the coding and billing workflow.\n\nOne VP at a similar multi site nonprofit network cut denial rates 27% without adding a coder.\n\nVPs use autonomous coding to hold accuracy above 98% while cost to collect comes down 70%. Worth 15 minutes to see if that would apply to Mar Monte?"
+      }
+    },
+    {
+      "pair_number": 6,
+      "profile_id": "jessica_crabtree",
+      "person_name": "Jessica Crabtree",
+      "company_name": "Nashville General Hospital",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Signal-Crisp",
+      "version_b_label": "Peer Story",
+      "archetype_description": "3-line signal-crisp DM vs an anonymized peer story. Brevity or narrative?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_linkedin_post",
+        "subject_line": "re: your associate's degree post",
+        "email_body": "Jessica, saw the associate's degree post, congrats on getting it across the line alongside revenue integrity work.\n\nWe help directors cut coding costs 40% while holding accuracy above 98%.\n\nOpen to a 15 minute chat?"
+      },
+      "version_b": {
+        "variant_id": "struct_story",
+        "signal_class": "signal_industry_trend",
+        "subject_line": "how a peer hospital handled non expansion pressure",
+        "email_body": "Hi Jessica,\n\nA Director of Revenue Integrity at a similar safety net hospital in a non expansion state walked me through their FY25 reset.\n\nThey assumed denials were a payer problem. Audit showed 27% were coder preventable, buried in charity and self pay claims. After switching the coding workflow, accuracy went to 98% and coding costs came down 40%, without adding a single coder to the team.\n\nNashville General carrying a fresh audit note plus Tennessee's Medicaid stance is the same starting line they ran from.\n\nWorth 15 minutes to compare what they did?"
+      }
+    },
+    {
+      "pair_number": 7,
+      "profile_id": "melanie_hinson",
+      "person_name": "Melanie Hinson",
+      "company_name": "OrthoVirginia",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Signal-Crisp",
+      "archetype_description": "Anti-AI human vs signal-crisp, second signal pairing for variance.",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_industry_trend",
+        "subject_line": "the a-10 partnership announcement",
+        "email_body": "dont know if this is a fair email to send the day after a women's basketball championship partnership drops, Melanie, but here we are.\n\northo groups scaling brand and sports med partnerships usually discover six months in that their coding throughput is the actual limit on growth, not clinic capacity.\n\nCastle Connolly calling OrthoVirginia #1 in the state plus the A-10 deal is the kind of year where the rev cycle team becomes the bottleneck nobody named yet.\n\nhappy to walk through what usually breaks first."
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_financial",
+        "subject_line": "a-10 partnership math",
+        "email_body": "Melanie, the A-10 women's basketball partnership is the kind of visibility year where coding volume runs ahead of coder hiring.\n\nWe help ortho groups cut A/R days 30% while keeping accuracy above 98%.\n\nWorth a chat?"
       }
     }
   ]

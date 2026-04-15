@@ -2,7 +2,7 @@
   "day": 2,
   "reviewer": "aditya",
   "phase": "style_exploration",
-  "generated_at": "2026-04-15T18:00:00Z",
+  "generated_at": "2026-04-15T07:25:40Z",
   "pairs": [
     {
       "pair_number": 1,
@@ -71,6 +71,106 @@
         "variant_id": "struct_curiosity",
         "subject_line": "what bristol's january de novos raised for us",
         "email_body": "Hi Rachael,\n\nBristol's January de novo wave across four states, plus the five-market next round, triggered a question for me, and it isn't the staffing one.\n\nEvery multi-state hospice we've watched expand at this pace hits the same revenue pattern in month four. It's almost never the thing operations leaders predict going in, and it tends to compound quietly until a quarterly review surfaces it.\n\nI'd rather not cram the whole pattern into a cold email, but it maps surprisingly tightly to DeNovo timelines.\n\nWorth a short conversation before the Cincinnati and Minneapolis markets come online?"
+      }
+    },
+    {
+      "pair_number": 4,
+      "profile_id": "jessica_crabtree",
+      "person_name": "Jessica Crabtree",
+      "company_name": "Nashville General Hospital",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Signal-Crisp",
+      "archetype_description": "Anti-AI opener with an obscure reference and front-loaded typo vs a 3-line signal-led DM-short email. Which feels more human?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_linkedin_post",
+        "subject_line": "the associate's degree post",
+        "email_body": "congrats Jessica, the associate's post popped up on my feed between two very forgettable things.\n\ndoing revenue integrity while also finishing a degree, with Nashville General sitting on an internal audit finding and a brand new FY26 board chair, is a lot of plates.\n\nmost places we talk to in that spot are a quarter away from needing a second set of coder eyes they cannot actually hire.\n\nif FY26 ends up being a year you rebuild the coding workflow, I would love to be useful."
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_financial",
+        "subject_line": "nashville general's fy26 plan",
+        "email_body": "Jessica, FY26 opening with a new board chair and an audit flag on financials is a tight window for revenue integrity.\n\nWe help hospitals cut denial rates 27% without adding coders.\n\nWorth 15 minutes before the FY26 plan locks?"
+      }
+    },
+    {
+      "pair_number": 5,
+      "profile_id": "melanie_hinson",
+      "person_name": "Melanie Hinson",
+      "company_name": "OrthoVirginia",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Current Style",
+      "archetype_description": "Anti-AI typed-fast human vs the current THE ONE framework. Which voice earns the reply?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_industry_trend",
+        "subject_line": "the a-10 partnership announcement",
+        "email_body": "dont know if this is a fair email to send the day after a women's basketball championship partnership drops, Melanie, but here we are.\n\northo groups scaling brand and sports med partnerships usually discover six months in that their coding throughput is the actual limit on growth, not clinic capacity.\n\nCastle Connolly calling OrthoVirginia #1 in the state plus the A-10 deal is the kind of year where the rev cycle team becomes the bottleneck nobody named yet.\n\nhappy to walk through what usually breaks first."
+      },
+      "version_b": {
+        "variant_id": "control",
+        "signal_class": "signal_industry_trend",
+        "subject_line": "a question about orthovirginia's 2026 run",
+        "email_body": "Hi Melanie,\n\nSaw OrthoVirginia landed the #1 orthopedic practice spot in Virginia for 2026 and just signed the Atlantic 10 women's basketball partnership. Specialty groups that scale brand and sports medicine at the same time usually find coding becomes the operational ceiling before clinic capacity does.\n\nOne Director at a similar ortho group cut coding costs 40% in two quarters without growing the billing team.\n\nDirectors use autonomous coding to hold accuracy above 98% while A/R days come down 30%. Worth a 15 minute look at how that would apply to OrthoVirginia's 2026 cadence?"
+      }
+    },
+    {
+      "pair_number": 6,
+      "profile_id": "kelly_smith",
+      "person_name": "Kelly Smith",
+      "company_name": "OHSU",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Signal-Crisp",
+      "version_b_label": "Peer Story",
+      "archetype_description": "3-line signal-crisp DM vs an anonymized peer story. Brevity or narrative?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_financial",
+        "subject_line": "ohsu's $110m operating loss",
+        "email_body": "Kelly, $110m operating loss plus new Oregon wage contracts means rev cycle is carrying more weight in FY26.\n\nWe help academic systems cut cost to collect 70% while holding accuracy above 98%.\n\nOpen to 15 minutes?"
+      },
+      "version_b": {
+        "variant_id": "struct_story",
+        "signal_class": "signal_peer_outcome",
+        "subject_line": "how a peer academic system ran fy after the downgrade",
+        "email_body": "Hi Kelly,\n\nA VP of Enterprise Rev Cycle at a similar academic system walked me through their first full fiscal year after an S&P downgrade.\n\nThey assumed the fix was a hiring freeze and a vendor consolidation. Once they audited the claim level data, coding accuracy was sitting at 94%, which is fine on a dashboard and expensive on a P&L. After moving onto autonomous coding, accuracy went to 98% plus, A/R days came down 30%, and cost to collect dropped 70%, all inside the same labor contract cycle.\n\nOHSU's FY26 setup looks like the same starting point.\n\nWorth 15 minutes?"
+      }
+    },
+    {
+      "pair_number": 7,
+      "profile_id": "joanne_parise",
+      "person_name": "Joanne Parise",
+      "company_name": "Planned Parenthood Mar Monte",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Signal-Crisp",
+      "archetype_description": "Anti-AI human vs signal-crisp, second signal pairing for variance.",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_peer_outcome",
+        "subject_line": "the see project grant",
+        "email_body": "dont know if the S.E.E. Project funding loss is the one that hurts most Joanne, or if its one of the other three.\n\n515 employees, a $50m January 2027 target, and finance running cover on all of it means the coding and billing side of the house is probably the last thing getting attention and the first thing leaking.\n\none VP at a similar sized nonprofit network found that 30% of their A/R days were sitting in coder reviewable claims nobody had cycles for.\n\nif that is a useful conversation ahead of FY26, I am around."
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_industry_trend",
+        "subject_line": "california's $90m backfill",
+        "email_body": "Joanne, California's $90m backfill buys time, not a new cost structure.\n\nWe help networks cut coding costs 40% while holding accuracy above 98%.\n\nWorth 15 minutes?"
       }
     }
   ]

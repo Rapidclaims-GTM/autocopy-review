@@ -2,7 +2,7 @@
   "day": 2,
   "reviewer": "sheetal",
   "phase": "style_exploration",
-  "generated_at": "2026-04-15T18:00:00Z",
+  "generated_at": "2026-04-15T07:25:40Z",
   "pairs": [
     {
       "pair_number": 1,
@@ -71,6 +71,106 @@
         "variant_id": "struct_story",
         "subject_line": "a uw medicine payer question",
         "email_body": "Hi Nikki,\n\nA Director of Operations and Finance at a similar academic system called us six months after their system lost two Medicare Advantage contracts. She wasn't worried about the revenue hit, that part was modeled. She was worried that the denial rate on the remaining payers had jumped 19% almost overnight, and her team couldn't keep up.\n\nTurned out it wasn't the payers. It was coding errors on out-of-network claims her team had never had to audit at volume before.\n\nHer team cleaned up denials 27% and held accuracy above 98% within a quarter, without adding coders.\n\nCurious whether the Regence and Humana exits are raising the same question at UW Medicine, worth a short call?"
+      }
+    },
+    {
+      "pair_number": 4,
+      "profile_id": "joanne_parise",
+      "person_name": "Joanne Parise",
+      "company_name": "Planned Parenthood Mar Monte",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Signal-Crisp",
+      "archetype_description": "Anti-AI opener with an obscure reference and front-loaded typo vs a 3-line signal-led DM-short email. Which feels more human?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_financial",
+        "subject_line": "the $6.5m a month line",
+        "email_body": "the $6.5m a month reimbursable care number is the one that stuck with me, Joanne, not the $90m California backfill.\n\nrunning finance for a network absorbing a federal cliff while standing up vasectomy care expansion is the kind of year where every coded claim has to land clean or the math stops working.\n\none VP at a similar multi site nonprofit cut denial rates 27% in a quarter when the funding picture got thinner, because the old workflow had room it didnt know it had.\n\nno pitch, just wanted to put this in your inbox before the January 2027 fundraising milestone gets any closer."
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_peer_outcome",
+        "subject_line": "post federal cliff finance",
+        "email_body": "Joanne, most networks in the federal cliff absorb it through rev cycle before they see it in the P&L.\n\nOne peer VP cut A/R days 30% inside a quarter without adding coders.\n\nWorth a 15 minute chat?"
+      }
+    },
+    {
+      "pair_number": 5,
+      "profile_id": "kelly_smith",
+      "person_name": "Kelly Smith",
+      "company_name": "OHSU",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Current Style",
+      "archetype_description": "Anti-AI typed-fast human vs the current THE ONE framework. Which voice earns the reply?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_industry_trend",
+        "subject_line": "oregon labor contracts and rev cycle",
+        "email_body": "was re reading the Oregon healthcare wage law stack and it kept pointing back at you Kelly, sort of.\n\nacademic systems carrying a multi year operating loss while absorbing new union wage floors usually discover the coding workflow is where the compounding actually happens, not the front line wage line.\n\none enterprise rev cycle VP at a similar system reset coding accuracy to 98% plus and pulled 30% out of A/R days the same quarter the labor contract went live.\n\nhappy to walk through what that looked like."
+      },
+      "version_b": {
+        "variant_id": "control",
+        "signal_class": "signal_financial",
+        "subject_line": "a question about ohsu's fy26 rev cycle",
+        "email_body": "Hi Kelly,\n\nSaw OHSU closed fiscal 2024 down $110m on a $4.9b budget, with S&P cutting the financial health rating and new Oregon labor contracts adding pressure on the wage line. Enterprise rev cycle at an academic system carrying that stack usually becomes the lever finance reaches for first in FY26.\n\nOne VP at a similar academic system cut cost to collect 70% without adding to the coding team.\n\nVPs use autonomous coding to hold accuracy above 98% while A/R days come down 30%. Worth a 15 minute look at how that maps to OHSU's setup?"
+      }
+    },
+    {
+      "pair_number": 6,
+      "profile_id": "jessica_crabtree",
+      "person_name": "Jessica Crabtree",
+      "company_name": "Nashville General Hospital",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Signal-Crisp",
+      "version_b_label": "Peer Story",
+      "archetype_description": "3-line signal-crisp DM vs an anonymized peer story. Brevity or narrative?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_linkedin_post",
+        "subject_line": "re: your associate's degree post",
+        "email_body": "Jessica, saw the associate's degree post, congrats on getting it across the line alongside revenue integrity work.\n\nWe help directors cut coding costs 40% while holding accuracy above 98%.\n\nOpen to a 15 minute chat?"
+      },
+      "version_b": {
+        "variant_id": "struct_story",
+        "signal_class": "signal_industry_trend",
+        "subject_line": "how a peer hospital handled non expansion pressure",
+        "email_body": "Hi Jessica,\n\nA Director of Revenue Integrity at a similar safety net hospital in a non expansion state walked me through their FY25 reset.\n\nThey assumed denials were a payer problem. Audit showed 27% were coder preventable, buried in charity and self pay claims. After switching the coding workflow, accuracy went to 98% and coding costs came down 40%, without adding a single coder to the team.\n\nNashville General carrying a fresh audit note plus Tennessee's Medicaid stance is the same starting line they ran from.\n\nWorth 15 minutes to compare what they did?"
+      }
+    },
+    {
+      "pair_number": 7,
+      "profile_id": "joe_williford",
+      "person_name": "Joe Williford",
+      "company_name": "Wood County Hospital",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Signal-Crisp",
+      "archetype_description": "Anti-AI human vs signal-crisp, second signal pairing for variance.",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_peer_outcome",
+        "subject_line": "wood county's women's choice nod",
+        "email_body": "congrats on the Women's Choice orthopedics nod Joe, genuinely didnt expect a Bowling Green hospital to show up next to the usual suspects.\n\nVPs I talk to at community hospitals carrying that kind of recognition usually have a quieter story on the rev cycle side, where the same volume is moving through thinner coder teams than anyone wants to admit.\n\none VP at a similar size community hospital found their A/R days dropped 30% after pulling coding off the critical path.\n\nno ask, just figured the contrast was worth naming."
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_industry_trend",
+        "subject_line": "community hospitals and coder supply",
+        "email_body": "Joe, community hospitals are losing coders faster than they can train replacements.\n\nWe help rev cycle teams cut coding costs 40% while holding accuracy above 98%.\n\nWorth 15 minutes?"
       }
     }
   ]

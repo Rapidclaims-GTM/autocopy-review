@@ -2,7 +2,7 @@
   "day": 2,
   "reviewer": "ameya",
   "phase": "style_exploration",
-  "generated_at": "2026-04-15T18:00:00Z",
+  "generated_at": "2026-04-15T07:25:40Z",
   "pairs": [
     {
       "pair_number": 1,
@@ -71,6 +71,106 @@
         "variant_id": "struct_bold_scannable",
         "subject_line": "yale new haven's fiscal 2026 setup",
         "email_body": "Hi Jennifer,\n\nYale New Haven closing fiscal 2025 down nearly $200M, with Medicaid shortfalls north of $430M and a new CFO starting in March, usually means strategic operations is quietly carrying a coding problem the rest of the system won't see until the fall.\n\nA similar academic system was in the same spot a year ago. After switching to autonomous coding, they saw **27% fewer denials** and cut cost to collect by 70% inside two quarters.\n\nThe Director told me the biggest surprise wasn't the savings, it was **how much time the team got back** for the strategic work they were hired to do.\n\nWorth 15 minutes to see how that fits Yale New Haven's setup right now?"
+      }
+    },
+    {
+      "pair_number": 4,
+      "profile_id": "kelly_smith",
+      "person_name": "Kelly Smith",
+      "company_name": "OHSU",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Signal-Crisp",
+      "archetype_description": "Anti-AI opener with an obscure reference and front-loaded typo vs a 3-line signal-led DM-short email. Which feels more human?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_financial",
+        "subject_line": "the s&p downgrade line",
+        "email_body": "the S&P health rating cut is the kind of thing that usually gets a single paragraph in a board packet, Kelly, and then quietly reshapes every budget line under it.\n\nrunning enterprise rev cycle at a system coming off a $110m operating loss on a $4.9b budget, with new Oregon labor contracts baked into the wage line, is the sort of year where coding accuracy becomes a finance conversation, not an operations one.\n\none VP at a similar academic system cut coding costs 40% inside two quarters without touching headcount.\n\nwasnt sure who else to send this to at OHSU, so here."
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_peer_outcome",
+        "subject_line": "post downgrade rev cycle",
+        "email_body": "Kelly, most academic systems absorb a rating downgrade through rev cycle before it shows up in operations.\n\nOne peer VP cut A/R days 30% inside a quarter.\n\nWorth 15 minutes?"
+      }
+    },
+    {
+      "pair_number": 5,
+      "profile_id": "jessica_crabtree",
+      "person_name": "Jessica Crabtree",
+      "company_name": "Nashville General Hospital",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Current Style",
+      "archetype_description": "Anti-AI typed-fast human vs the current THE ONE framework. Which voice earns the reply?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_financial",
+        "subject_line": "christy smith, chair, fy26",
+        "email_body": "wasnt sure if Christy taking over as chair was supposed to be a quiet handoff or the start of something, Jessica.\n\neither way, revenue integrity teams inherit most of what a new finance chair wants to clean up first. Nashville General's audit note plus Tennessee still holding out on Medicaid expansion is an awkward baseline to open FY26 on.\n\none peer hospital in a non-expansion state found 27% of their denials were coder-preventable, not payer-preventable, which flipped how they budgeted.\n\nhappy to walk through that if it is useful before the FY26 plan locks."
+      },
+      "version_b": {
+        "variant_id": "control",
+        "signal_class": "signal_financial",
+        "subject_line": "a question about nashville general's fy26 setup",
+        "email_body": "Hi Jessica,\n\nSaw Nashville General's Hospital Authority just elected Christy Smith as chair for FY26, right after an internal audit flagged financial mismanagement and with Tennessee still holding out on Medicaid expansion. Revenue integrity usually carries the first wave of pressure when a finance chair inherits that kind of setup.\n\nOne Director at a similar safety net hospital in a non expansion state cut denial rates 27% without adding to the coding team.\n\nDirectors use autonomous coding to hold accuracy above 98% while costs come down 40%. Worth 15 minutes to see if that maps to Nashville General's FY26 plan?"
+      }
+    },
+    {
+      "pair_number": 6,
+      "profile_id": "joe_williford",
+      "person_name": "Joe Williford",
+      "company_name": "Wood County Hospital",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Signal-Crisp",
+      "version_b_label": "Peer Story",
+      "archetype_description": "3-line signal-crisp DM vs an anonymized peer story. Brevity or narrative?",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_financial",
+        "subject_line": "wood county's 2026 sliding scale",
+        "email_body": "Joe, new sliding scale plus the 2026 to 2028 community health plan means coding has to reconcile a lot of new payer math.\n\nWe help hospitals cut A/R days 30% while keeping accuracy above 98%.\n\nOpen to 15 minutes?"
+      },
+      "version_b": {
+        "variant_id": "struct_story",
+        "signal_class": "signal_peer_outcome",
+        "subject_line": "how a similar community hospital handled the coder squeeze",
+        "email_body": "Hi Joe,\n\nA VP of Revenue Cycle at a similar size community hospital was sitting on the exact shape of problem that usually comes with a Women's Choice bump in volume.\n\nTheir coders were absorbing the new outpatient load on top of inpatient, A/R days were creeping up, and hiring another coder meant a six month ramp they didn't have. They moved coding onto autonomous workflow, A/R days dropped 30% in a quarter, accuracy held above 98%, and they never backfilled the coder seat.\n\nWood County's recognition year looks like the same setup they had going in.\n\nWorth 15 minutes to compare notes?"
+      }
+    },
+    {
+      "pair_number": 7,
+      "profile_id": "melanie_hinson",
+      "person_name": "Melanie Hinson",
+      "company_name": "OrthoVirginia",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "signal_choice",
+      "version_a_label": "Anti-AI Human",
+      "version_b_label": "Signal-Crisp",
+      "archetype_description": "Anti-AI human vs signal-crisp, second signal pairing for variance.",
+      "what_to_notice": "Which opening signal hooks you more? Describe in one word what caught your eye in the winning version.",
+      "version_a": {
+        "variant_id": "struct_anti_ai",
+        "signal_class": "signal_industry_trend",
+        "subject_line": "the a-10 partnership announcement",
+        "email_body": "dont know if this is a fair email to send the day after a women's basketball championship partnership drops, Melanie, but here we are.\n\northo groups scaling brand and sports med partnerships usually discover six months in that their coding throughput is the actual limit on growth, not clinic capacity.\n\nCastle Connolly calling OrthoVirginia #1 in the state plus the A-10 deal is the kind of year where the rev cycle team becomes the bottleneck nobody named yet.\n\nhappy to walk through what usually breaks first."
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "signal_class": "signal_financial",
+        "subject_line": "a-10 partnership math",
+        "email_body": "Melanie, the A-10 women's basketball partnership is the kind of visibility year where coding volume runs ahead of coder hiring.\n\nWe help ortho groups cut A/R days 30% while keeping accuracy above 98%.\n\nWorth a chat?"
       }
     }
   ]
