@@ -1,0 +1,77 @@
+{
+  "day": 2,
+  "reviewer": "aditya",
+  "phase": "style_exploration",
+  "generated_at": "2026-04-15T18:00:00Z",
+  "pairs": [
+    {
+      "pair_number": 1,
+      "profile_id": "thomas_mollahan",
+      "person_name": "Thomas Mollahan",
+      "company_name": "Charles E. Smith Life Communities",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Anti-AI Human",
+      "archetype_description": "Four-axis anti-AI: GPT-impossible opener, obscure company reference, non-formula structure, front-loaded typo.",
+      "what_to_notice": "Which email feels like it was written by a real person? Which one would you actually reply to?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about charles e smith's ring house grant",
+        "email_body": "Hi Thomas,\n\nSaw Charles E. Smith Life Communities is lined up for an $800K Ring House renovation grant and just picked up the inaugural 2025 Most Admired Non-Profit Culture Award. Patient Financial Services at a 38-acre CCRC with capital work landing and staffing shortages already reported usually means collections are absorbing pressure the rest of the campus doesn't feel.\n\nOne Director at a similar non-profit senior living network cut cost to collect by 70% without growing the PFS team.\n\nDirectors use autonomous coding to keep accuracy above 98% while operations stretch. Worth 15 minutes to map that against what PFS is seeing today?"
+      },
+      "version_b": {
+        "variant_id": "struct_anti_ai",
+        "subject_line": "the 2025 admired culture award",
+        "email_body": "Thomas, im going to skip the usual opener, the Admired Non-Profit Culture Award you picked up in March is actually rare for a CCRC your size and worth saying out loud.\n\nRing Houses $800K renovation grant is landing on top of a PFS team thats already absorbing staffing shortages that nobody replaced. The Director PFS seat in 2026 at a 38-acre campus with capital work is basically the early warning system for the whole campus, cost to collect creeps up first.\n\nOne similar non-profit senior living Director found 11% of their AR over 90 was actually clean claims stuck in coding review, not a patient collections problem at all.\n\nOpen to a short chat if youre seeing the same pattern."
+      }
+    },
+    {
+      "pair_number": 2,
+      "profile_id": "carrie_schepp",
+      "person_name": "Carrie Schepp",
+      "company_name": "Agrace",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Signal-Crisp (3-4 lines)",
+      "archetype_description": "3-4 lines, ~50 words. Signal-led opener, what we do, the ask. LinkedIn-DM-short.",
+      "what_to_notice": "Would the crisp 3-4 line version get a reply where the longer one gets ignored? Or does it feel too thin?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about agrace's wauwatosa expansion",
+        "email_body": "Hi Carrie,\n\nSaw Agrace is extending into Ozaukee, Washington, Racine, and Kenosha out of the new Wauwatosa regional office while the $30M Dementia Village campaign keeps building. Regional operations stretched across new counties plus a capital project usually means the billing team is getting pulled thinner than anyone's naming out loud.\n\nOne Director at a similar hospice cut coding costs 40% during a regional expansion without growing their billing team.\n\nDirectors use autonomous coding to keep accuracy above 98% while operations scale. Worth a 15 minute look at how that would apply to Agrace's southeast Wisconsin rollout?"
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "subject_line": "agrace's wauwatosa expansion",
+        "email_body": "Hi Carrie, saw Agrace is extending into four new southeastern Wisconsin counties while the Dementia Village campaign builds.\n\nWe help regional hospice teams cut coding costs 40% during expansions without hiring more coders.\n\nWorth a short call?"
+      }
+    },
+    {
+      "pair_number": 3,
+      "profile_id": "rachael_worrath",
+      "person_name": "Rachael Worrath",
+      "company_name": "Bristol Hospice",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Curiosity Arc",
+      "archetype_description": "Opens an open loop, hints at a pattern, does not resolve. CTA invites the payoff.",
+      "what_to_notice": "Which version makes you want to keep reading?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about bristol hospice's de novo expansion",
+        "email_body": "Hi Rachael,\n\nNoticed Bristol Hospice just launched de novos across four states in January, with five more markets named for the next wave. Standing up new operations that fast usually means coding teams are the last group to scale, and clean claims from day one across Mississippi, Tulsa, and McAllen is its own problem.\n\nOne VP at a similar multi-state hospice network cut A/R days by 30% during their expansion quarter without adding coders.\n\nVPs use autonomous coding to accelerate cash flow and keep accuracy above 98% as new locations come online. Worth 15 minutes to see if that approach maps to Bristol's launch cadence?"
+      },
+      "version_b": {
+        "variant_id": "struct_curiosity",
+        "subject_line": "what bristol's january de novos raised for us",
+        "email_body": "Hi Rachael,\n\nBristol's January de novo wave across four states, plus the five-market next round, triggered a question for me, and it isn't the staffing one.\n\nEvery multi-state hospice we've watched expand at this pace hits the same revenue pattern in month four. It's almost never the thing operations leaders predict going in, and it tends to compound quietly until a quarterly review surfaces it.\n\nI'd rather not cram the whole pattern into a cold email, but it maps surprisingly tightly to DeNovo timelines.\n\nWorth a short conversation before the Cincinnati and Minneapolis markets come online?"
+      }
+    }
+  ]
+}

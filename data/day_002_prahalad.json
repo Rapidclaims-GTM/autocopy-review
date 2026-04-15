@@ -1,0 +1,77 @@
+{
+  "day": 2,
+  "reviewer": "prahalad",
+  "phase": "style_exploration",
+  "generated_at": "2026-04-15T18:00:00Z",
+  "pairs": [
+    {
+      "pair_number": 1,
+      "profile_id": "jennifer_dempsey",
+      "person_name": "Jennifer Dempsey",
+      "company_name": "Yale New Haven Health",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Anti-AI Human",
+      "archetype_description": "Four-axis anti-AI: GPT-impossible opener, obscure company reference, non-formula structure, front-loaded typo.",
+      "what_to_notice": "Which email feels like it was written by a real person? Which one would you actually reply to?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about yale new haven's fiscal 2025 losses",
+        "email_body": "Hi Jennifer,\n\nSaw reports that Yale New Haven Health closed fiscal 2025 down nearly $200 million, with Medicaid shortfalls over $430M and a new CFO just stepping in this March. Strategic operations at a five-hospital system carrying that kind of pressure tends to mean every dollar of coding accuracy matters more than it did 12 months ago.\n\nOne Director at a similar academic system cut denial rates 27% and recovered cash flow without adding to the billing team.\n\nDirectors use autonomous coding to bring coding costs down 40% while holding accuracy above 98%. Curious whether that math is worth a closer look for Yale New Haven's setup?"
+      },
+      "version_b": {
+        "variant_id": "struct_anti_ai",
+        "subject_line": "the wallingford urgent care post",
+        "email_body": "dont know if this lands Jennifer, but the Wallingford urgent care opening post you put up caught me at a weird time.\n\nFive hospitals, a $200M loss year, Medicaid shortfall north of $430M, and you're standing up new outpatient footprint anyway. That's a strategic ops job most people wouldn't want.\n\nThe coding side of a build-while-bleeding year is where the quiet money hides. One similar system found 27% of their denials were coming from the newest sites, not the ones they assumed.\n\nAnyway. If Arnim's first 90 days include a look at coding accuracy, I'd love to be in that conversation."
+      }
+    },
+    {
+      "pair_number": 2,
+      "profile_id": "rachael_worrath",
+      "person_name": "Rachael Worrath",
+      "company_name": "Bristol Hospice",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Signal-Crisp (3-4 lines)",
+      "archetype_description": "3-4 lines, ~50 words. Signal-led opener, what we do, the ask. LinkedIn-DM-short.",
+      "what_to_notice": "Would the crisp 3-4 line version get a reply where the longer one gets ignored? Or does it feel too thin?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about bristol hospice's de novo expansion",
+        "email_body": "Hi Rachael,\n\nNoticed Bristol Hospice just launched de novos across four states in January, with five more markets named for the next wave. Standing up new operations that fast usually means coding teams are the last group to scale, and clean claims from day one across Mississippi, Tulsa, and McAllen is its own problem.\n\nOne VP at a similar multi-state hospice network cut A/R days by 30% during their expansion quarter without adding coders.\n\nVPs use autonomous coding to accelerate cash flow and keep accuracy above 98% as new locations come online. Worth 15 minutes to see if that approach maps to Bristol's launch cadence?"
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "subject_line": "bristol's january de novos",
+        "email_body": "Hi Rachael, four de novo states in January plus five more markets coming is a lot of coding to spin up clean.\n\nWe help hospices keep accuracy above 98% across new sites while cutting A/R days 30%.\n\nOpen to a 15 minute chat?"
+      }
+    },
+    {
+      "pair_number": 3,
+      "profile_id": "carrie_schepp",
+      "person_name": "Carrie Schepp",
+      "company_name": "Agrace",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Curiosity Arc",
+      "archetype_description": "Opens an open loop, hints at a pattern, does not resolve. CTA invites the payoff.",
+      "what_to_notice": "Which version makes you want to keep reading?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about agrace's wauwatosa expansion",
+        "email_body": "Hi Carrie,\n\nSaw Agrace is extending into Ozaukee, Washington, Racine, and Kenosha out of the new Wauwatosa regional office while the $30M Dementia Village campaign keeps building. Regional operations stretched across new counties plus a capital project usually means the billing team is getting pulled thinner than anyone's naming out loud.\n\nOne Director at a similar hospice cut coding costs 40% during a regional expansion without growing their billing team.\n\nDirectors use autonomous coding to keep accuracy above 98% while operations scale. Worth a 15 minute look at how that would apply to Agrace's southeast Wisconsin rollout?"
+      },
+      "version_b": {
+        "variant_id": "struct_curiosity",
+        "subject_line": "something the wauwatosa expansion raised for us",
+        "email_body": "Hi Carrie,\n\nSomething about Agrace's move into Ozaukee, Washington, Racine, and Kenosha kept nagging at me, and it's not the obvious staffing question.\n\nEvery nonprofit hospice we've watched stretch into new counties hits the same invisible margin leak in month three. It isn't competition from for-profits, and it isn't recruitment. It's buried somewhere else entirely, and Dementia Village breaking ground in May probably accelerates it.\n\nI'd rather not lay out the whole thing in a cold email, but it's one of those patterns that's easy to spot once you know where to look.\n\nWould it be useful to walk through what we've seen, before the southeastern rollout picks up pace?"
+      }
+    }
+  ]
+}

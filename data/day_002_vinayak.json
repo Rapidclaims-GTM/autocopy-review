@@ -1,0 +1,77 @@
+{
+  "day": 2,
+  "reviewer": "vinayak",
+  "phase": "style_exploration",
+  "generated_at": "2026-04-15T18:00:00Z",
+  "pairs": [
+    {
+      "pair_number": 1,
+      "profile_id": "rachael_worrath",
+      "person_name": "Rachael Worrath",
+      "company_name": "Bristol Hospice",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Anti-AI Human",
+      "archetype_description": "Four-axis anti-AI: GPT-impossible opener, obscure company reference, non-formula structure, front-loaded typo.",
+      "what_to_notice": "Which email feels like it was written by a real person? Which one would you actually reply to?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about bristol hospice's de novo expansion",
+        "email_body": "Hi Rachael,\n\nNoticed Bristol Hospice just launched de novos across four states in January, with five more markets named for the next wave. Standing up new operations that fast usually means coding teams are the last group to scale, and clean claims from day one across Mississippi, Tulsa, and McAllen is its own problem.\n\nOne VP at a similar multi-state hospice network cut A/R days by 30% during their expansion quarter without adding coders.\n\nVPs use autonomous coding to accelerate cash flow and keep accuracy above 98% as new locations come online. Worth 15 minutes to see if that approach maps to Bristol's launch cadence?"
+      },
+      "version_b": {
+        "variant_id": "struct_anti_ai",
+        "subject_line": "the mcallen de novo",
+        "email_body": "Rachael, random Q, hows McAllen going.\n\nFour states in one January is a lot. Mississippi, Pittsburgh, Tulsa, McAllen, plus the DaySpring acquisitions in Enterprise, Dothan, and Andalusia. The de novo VP job is basically building a plane mid-air and the coding team is always the last seat filled.\n\nMost hospice expansions I see hit a wall at month four when the billing from the new sites lands and nothing codes clean. That's usually a cash flow problem nobody predicted.\n\nNot a pitch, just an observation. Open to a 15 minute chat on what other multi-state hospices ran into."
+      }
+    },
+    {
+      "pair_number": 2,
+      "profile_id": "jennifer_dempsey",
+      "person_name": "Jennifer Dempsey",
+      "company_name": "Yale New Haven Health",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Signal-Crisp (3-4 lines)",
+      "archetype_description": "3-4 lines, ~50 words. Signal-led opener, what we do, the ask. LinkedIn-DM-short.",
+      "what_to_notice": "Would the crisp 3-4 line version get a reply where the longer one gets ignored? Or does it feel too thin?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about yale new haven's fiscal 2025 losses",
+        "email_body": "Hi Jennifer,\n\nSaw reports that Yale New Haven Health closed fiscal 2025 down nearly $200 million, with Medicaid shortfalls over $430M and a new CFO just stepping in this March. Strategic operations at a five-hospital system carrying that kind of pressure tends to mean every dollar of coding accuracy matters more than it did 12 months ago.\n\nOne Director at a similar academic system cut denial rates 27% and recovered cash flow without adding to the billing team.\n\nDirectors use autonomous coding to bring coding costs down 40% while holding accuracy above 98%. Curious whether that math is worth a closer look for Yale New Haven's setup?"
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "subject_line": "yale new haven's fiscal 2025",
+        "email_body": "Hi Jennifer, saw Yale New Haven closed fiscal 2025 down $200M with Medicaid shortfalls over $430M.\n\nWe help similar systems cut denial rates 27% and recover cash without growing the billing team.\n\nWorth 15 minutes to see if it fits?"
+      }
+    },
+    {
+      "pair_number": 3,
+      "profile_id": "kim_wiley",
+      "person_name": "Kim Wiley",
+      "company_name": "Holzer Health System",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Bullet-point format",
+      "archetype_description": "Hook sentence, 2-3 metric bullets, CTA sentence.",
+      "what_to_notice": "Does the bulleted format make this easier or harder to read?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "something we noticed at holzer",
+        "email_body": "Hi Kim,\n\nSaw Holzer is a likely beneficiary of Ohio's $202M Rural Health Transformation Fund and just secured $999K for the lab modernization. Rural health dollars coming in is a good story, but Medicaid-heavy payer mix plus the nursing turnover climb from 33.7% to 41.8% usually means revenue cycle is carrying weight the balance sheet can't see yet.\n\nOne VP at a similar rural system unlocked $2.5M in cash flow by cleaning up coding before the capital money landed.\n\nVPs use autonomous coding to cut A/R days 30% without adding headcount. Worth a short conversation about what that could mean for Holzer's fiscal 2026?"
+      },
+      "version_b": {
+        "variant_id": "struct_bullets",
+        "subject_line": "holzer's fiscal 2026 position",
+        "email_body": "Hi Kim,\n\nHolzer sitting under Ohio's Rural Health Transformation dollars with nursing turnover climbing from 33.7% to 41.8% usually means revenue cycle is carrying more weight than the balance sheet shows.\n\nWhat we've seen at similar rural systems:\n- A/R days cut 30% in one quarter without adding coders\n- Cash flow accelerated by $2.5M before capital projects land\n- Coding accuracy held at 98%+ through nursing turnover spikes\n\nWorth 15 minutes to see if that pattern applies to what you're navigating for fiscal 2026?"
+      }
+    }
+  ]
+}

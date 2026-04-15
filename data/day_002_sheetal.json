@@ -1,0 +1,77 @@
+{
+  "day": 2,
+  "reviewer": "sheetal",
+  "phase": "style_exploration",
+  "generated_at": "2026-04-15T18:00:00Z",
+  "pairs": [
+    {
+      "pair_number": 1,
+      "profile_id": "carrie_schepp",
+      "person_name": "Carrie Schepp",
+      "company_name": "Agrace",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Anti-AI Human",
+      "archetype_description": "Four-axis anti-AI: GPT-impossible opener, obscure company reference, non-formula structure, front-loaded typo.",
+      "what_to_notice": "Which email feels like it was written by a real person? Which one would you actually reply to?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about agrace's wauwatosa expansion",
+        "email_body": "Hi Carrie,\n\nSaw Agrace is extending into Ozaukee, Washington, Racine, and Kenosha out of the new Wauwatosa regional office while the $30M Dementia Village campaign keeps building. Regional operations stretched across new counties plus a capital project usually means the billing team is getting pulled thinner than anyone's naming out loud.\n\nOne Director at a similar hospice cut coding costs 40% during a regional expansion without growing their billing team.\n\nDirectors use autonomous coding to keep accuracy above 98% while operations scale. Worth a 15 minute look at how that would apply to Agrace's southeast Wisconsin rollout?"
+      },
+      "version_b": {
+        "variant_id": "struct_anti_ai",
+        "subject_line": "the janesville inpatient closure",
+        "email_body": "hey Carrie, the Janesville inpatient closure in late 2024 stuck with me, its the kind of thing only regional directors feel the full weight of.\n\nNow Agrace is expanding into four new counties out of Wauwatosa while the Dementia Village breaks ground in May. Growth, capital, and a staff pool getting poached by for-profits at the same time.\n\nHere's what I keep seeing: when nonprofit hospices stretch into new counties, coding accuracy quietly drops 4-6% in the first quarter. It doesnt show up until the 90-day aging report.\n\nWorth swapping notes on what that looks like before the southeastern Wisconsin claims start flowing."
+      }
+    },
+    {
+      "pair_number": 2,
+      "profile_id": "thomas_mollahan",
+      "person_name": "Thomas Mollahan",
+      "company_name": "Charles E. Smith Life Communities",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Signal-Crisp (3-4 lines)",
+      "archetype_description": "3-4 lines, ~50 words. Signal-led opener, what we do, the ask. LinkedIn-DM-short.",
+      "what_to_notice": "Would the crisp 3-4 line version get a reply where the longer one gets ignored? Or does it feel too thin?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about charles e smith's ring house grant",
+        "email_body": "Hi Thomas,\n\nSaw Charles E. Smith Life Communities is lined up for an $800K Ring House renovation grant and just picked up the inaugural 2025 Most Admired Non-Profit Culture Award. Patient Financial Services at a 38-acre CCRC with capital work landing and staffing shortages already reported usually means collections are absorbing pressure the rest of the campus doesn't feel.\n\nOne Director at a similar non-profit senior living network cut cost to collect by 70% without growing the PFS team.\n\nDirectors use autonomous coding to keep accuracy above 98% while operations stretch. Worth 15 minutes to map that against what PFS is seeing today?"
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "subject_line": "charles e smith's ring house grant",
+        "email_body": "Hi Thomas, the Ring House $800K renovation grant lands on top of a PFS team already short-staffed.\n\nWe help non-profit senior living teams cut cost to collect by 70% without adding headcount.\n\nWorth 15 minutes?"
+      }
+    },
+    {
+      "pair_number": 3,
+      "profile_id": "nikki_hill",
+      "person_name": "Nikki Hill",
+      "company_name": "UW Medicine",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Peer Story",
+      "archetype_description": "Anonymized peer's story drives the email, then bridges back to them.",
+      "what_to_notice": "Does the story format feel more relatable or less credible?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about uw medicine's 2026 payer changes",
+        "email_body": "Hi Nikki,\n\nSaw UW Medicine is out of Regence, Humana, PacificSource, and Wellpoint Medicare Advantage networks for 2026, on top of the federal funding uncertainty hitting clinical trials and research. Operations and finance under that kind of payer shift usually means risk management is absorbing denial pressure the rest of the system doesn't see yet.\n\nOne Director at a similar academic system cut denial rates 27% during a payer renegotiation year without adding coders.\n\nDirectors use autonomous coding to hold accuracy above 98% while payer mix shifts underneath them. Curious whether that approach fits what UW Medicine is navigating right now?"
+      },
+      "version_b": {
+        "variant_id": "struct_story",
+        "subject_line": "a uw medicine payer question",
+        "email_body": "Hi Nikki,\n\nA Director of Operations and Finance at a similar academic system called us six months after their system lost two Medicare Advantage contracts. She wasn't worried about the revenue hit, that part was modeled. She was worried that the denial rate on the remaining payers had jumped 19% almost overnight, and her team couldn't keep up.\n\nTurned out it wasn't the payers. It was coding errors on out-of-network claims her team had never had to audit at volume before.\n\nHer team cleaned up denials 27% and held accuracy above 98% within a quarter, without adding coders.\n\nCurious whether the Regence and Humana exits are raising the same question at UW Medicine, worth a short call?"
+      }
+    }
+  ]
+}

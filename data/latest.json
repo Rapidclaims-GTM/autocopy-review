@@ -1,16 +1,12 @@
 {
-  "day": 1,
+  "day": 2,
   "phase": "style_exploration",
-  "generated_at": "2026-04-12T19:32:05Z",
-  "reviewers": [
-    "prahalad",
-    "rahul",
-    "vinayak",
-    "sheetal",
-    "ameya",
-    "aditya",
-    "vaibhav"
-  ],
-  "elo_leaders": {},
-  "status": "Day 1 ready \u2014 Phase 1 style exploration, 7 pairs per reviewer"
+  "email_format": "single_email",
+  "elo_leaders": {
+    "email_structure": {
+      "label": "THE ONE framework",
+      "variant_id": "struct_theone",
+      "elo": 1585
+    }
+  }
 }

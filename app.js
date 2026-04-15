@@ -106,11 +106,11 @@ function renderPair(index) {
   document.getElementById('profile-info').innerHTML =
     `<strong>${pair.person_name}</strong> &middot; ${pair.persona_type} &middot; ${pair.company_name}`;
 
-  // Render emails for Version A
-  renderEmails('emails-a', pair.version_a.emails, pair.version_a.subject_line);
+  // Render single email for Version A
+  renderEmail('emails-a', pair.version_a);
 
-  // Render emails for Version B
-  renderEmails('emails-b', pair.version_b.emails, pair.version_b.subject_line);
+  // Render single email for Version B
+  renderEmail('emails-b', pair.version_b);
 
   // Reset vote UI
   document.querySelectorAll('.vote-btn').forEach(b => b.classList.remove('selected'));
@@ -129,32 +129,25 @@ function renderPair(index) {
   document.querySelector('.compare-body')?.scrollTo(0, 0);
 }
 
-function renderEmails(containerId, emails, subjectLine) {
+function renderEmail(containerId, version) {
   const container = document.getElementById(containerId);
   container.innerHTML = '';
 
-  emails.forEach((email, index) => {
-    const card = document.createElement('div');
-    card.className = 'email-card';
+  // Support both new schema (email_body) and legacy (emails[0].email_body)
+  const body = version.email_body || (version.emails && version.emails[0] && version.emails[0].email_body) || '';
+  const subjectLine = version.subject_line || '';
+  const wordCount = body ? body.split(/\s+/).filter(Boolean).length : 0;
 
-    const wordCount = email.email_body ? email.email_body.split(/\s+/).length : 0;
-
-    // Subject line only on Email 1; emails 2-3 are threaded replies
-    const subjectHtml = index === 0 && subjectLine
-      ? `<div class="email-subject"><span class="subject-label">Subject:</span> ${escapeHtml(subjectLine)}</div>`
-      : `<div class="email-subject email-subject-thread">↩ threaded reply</div>`;
-
-    card.innerHTML = `
-      <div class="email-card-header">
-        <span class="email-number">Email ${email.email_number}</span>
-        <span class="email-word-count">${wordCount} words</span>
-      </div>
-      ${subjectHtml}
-      <div class="email-body">${escapeHtml(email.email_body)}</div>
-    `;
-
-    container.appendChild(card);
-  });
+  const card = document.createElement('div');
+  card.className = 'email-card';
+  card.innerHTML = `
+    <div class="email-card-header">
+      <span class="email-word-count">${wordCount} words</span>
+    </div>
+    <div class="email-subject"><span class="subject-label">Subject:</span> ${escapeHtml(subjectLine)}</div>
+    <div class="email-body">${escapeHtml(body)}</div>
+  `;
+  container.appendChild(card);
 }
 
 // ============ TAB SWITCHER (MOBILE) ============
@@ -301,7 +294,7 @@ function showCompletionScreen() {
     'cta_style': 'CTA style',
     'tone_length': 'Tone/length',
     'email_structure': 'Structure',
-    'sequence_flow': 'Sequence flow'
+    'signal_choice': 'Signal choice'
   };
 
   let summaryHtml = '<h3>Today you compared</h3>';
@@ -351,7 +344,7 @@ function showEloLeaders(leaders, containerId, listId) {
     'cta_style': 'CTA',
     'tone_length': 'Tone',
     'email_structure': 'Structure',
-    'sequence_flow': 'Flow'
+    'signal_choice': 'Signal'
   };
 
   let html = '';

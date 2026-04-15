@@ -1,0 +1,77 @@
+{
+  "day": 2,
+  "reviewer": "rahul",
+  "phase": "style_exploration",
+  "generated_at": "2026-04-15T18:00:00Z",
+  "pairs": [
+    {
+      "pair_number": 1,
+      "profile_id": "kim_wiley",
+      "person_name": "Kim Wiley",
+      "company_name": "Holzer Health System",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Anti-AI Human",
+      "archetype_description": "Four-axis anti-AI: GPT-impossible opener, obscure company reference, non-formula structure, front-loaded typo.",
+      "what_to_notice": "Which email feels like it was written by a real person? Which one would you actually reply to?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "something we noticed at holzer",
+        "email_body": "Hi Kim,\n\nSaw Holzer is a likely beneficiary of Ohio's $202M Rural Health Transformation Fund and just secured $999K for the lab modernization. Rural health dollars coming in is a good story, but Medicaid-heavy payer mix plus the nursing turnover climb from 33.7% to 41.8% usually means revenue cycle is carrying weight the balance sheet can't see yet.\n\nOne VP at a similar rural system unlocked $2.5M in cash flow by cleaning up coding before the capital money landed.\n\nVPs use autonomous coding to cut A/R days 30% without adding headcount. Worth a short conversation about what that could mean for Holzer's fiscal 2026?"
+      },
+      "version_b": {
+        "variant_id": "struct_anti_ai",
+        "subject_line": "dr stout's oha appointment",
+        "email_body": "Kim, congrats on Dr Stouts OHA trustee appointment, thats a good signal for Holzer beyond the Gallipolis footprint.\n\nheres the thing. The Rural Health Transformation money is going to land on top of a payer mix that already runs hot on Medicaid shortfalls, and the nursing turnover jumped from 33.7% to 41.8%. The VP of Revenue Cycle job in a year like 2026 is basically holding the line on cash while everyone else celebrates the grants.\n\nOne rural system I worked with found $2.5M sitting in unworked denials they assumed were Medicaid policy, but were actually coding misses from the float nurses documenting.\n\nIf any of that rhymes with what youre seeing, happy to compare notes."
+      }
+    },
+    {
+      "pair_number": 2,
+      "profile_id": "nikki_hill",
+      "person_name": "Nikki Hill",
+      "company_name": "UW Medicine",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Signal-Crisp (3-4 lines)",
+      "archetype_description": "3-4 lines, ~50 words. Signal-led opener, what we do, the ask. LinkedIn-DM-short.",
+      "what_to_notice": "Would the crisp 3-4 line version get a reply where the longer one gets ignored? Or does it feel too thin?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about uw medicine's 2026 payer changes",
+        "email_body": "Hi Nikki,\n\nSaw UW Medicine is out of Regence, Humana, PacificSource, and Wellpoint Medicare Advantage networks for 2026, on top of the federal funding uncertainty hitting clinical trials and research. Operations and finance under that kind of payer shift usually means risk management is absorbing denial pressure the rest of the system doesn't see yet.\n\nOne Director at a similar academic system cut denial rates 27% during a payer renegotiation year without adding coders.\n\nDirectors use autonomous coding to hold accuracy above 98% while payer mix shifts underneath them. Curious whether that approach fits what UW Medicine is navigating right now?"
+      },
+      "version_b": {
+        "variant_id": "struct_signal_crisp",
+        "subject_line": "uw medicine's 2026 payer exits",
+        "email_body": "Hi Nikki, UW Medicine is out of four Medicare Advantage networks for 2026 on top of federal funding uncertainty.\n\nWe help academic systems hold accuracy above 98% and cut denials 27% during payer shifts.\n\nOpen to a quick call?"
+      }
+    },
+    {
+      "pair_number": 3,
+      "profile_id": "thomas_mollahan",
+      "person_name": "Thomas Mollahan",
+      "company_name": "Charles E. Smith Life Communities",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Ultra-Short",
+      "archetype_description": "4 sentences, 55-70 words. Problem, solution, proof, CTA.",
+      "what_to_notice": "Which length feels right for a cold email from someone you don't know?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "a question about charles e smith's ring house grant",
+        "email_body": "Hi Thomas,\n\nSaw Charles E. Smith Life Communities is lined up for an $800K Ring House renovation grant and just picked up the inaugural 2025 Most Admired Non-Profit Culture Award. Patient Financial Services at a 38-acre CCRC with capital work landing and staffing shortages already reported usually means collections are absorbing pressure the rest of the campus doesn't feel.\n\nOne Director at a similar non-profit senior living network cut cost to collect by 70% without growing the PFS team.\n\nDirectors use autonomous coding to keep accuracy above 98% while operations stretch. Worth 15 minutes to map that against what PFS is seeing today?"
+      },
+      "version_b": {
+        "variant_id": "struct_direct",
+        "subject_line": "charles e smith's ring house work",
+        "email_body": "Hi Thomas, Ring House renovation money on top of an already short-staffed PFS team usually means cost to collect creeps up before anyone notices.\n\nWe help non-profit senior living Directors cut cost to collect by 70% and hold accuracy above 98%, without growing the team.\n\nOne similar CCRC recovered $1.4M in AR over 90 in a single quarter.\n\nWorth 15 minutes this week?"
+      }
+    }
+  ]
+}
