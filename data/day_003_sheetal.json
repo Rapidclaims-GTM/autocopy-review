@@ -1,0 +1,170 @@
+{
+  "day": 3,
+  "reviewer": "sheetal",
+  "phase": "style_exploration",
+  "generated_at": "2026-04-17T00:00:00Z",
+  "day3_focus": "First direct test of peer story vs control. Plus revised anti-AI (no typo) vs control.",
+  "pairs": [
+    {
+      "pair_number": 1,
+      "profile_id": "mary_kartes",
+      "person_name": "Mary",
+      "company_name": "Bristol Hospice",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Peer Story",
+      "archetype_description": "Version A follows our standard framework. Version B opens with a peer story from a director at a similar org.",
+      "what_to_notice": "Which email makes you feel like the sender actually understands the prospect's situation? Does the story feel credible or too neat?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "bristol hospice's clinical hiring push in oregon and washington",
+        "email_body": "Hi Mary,\n\nSaw the Walk-In Wednesday events you're running in Springfield, Eugene, and Portland, RNs, CNAs, Clinical Supervisors across multiple cities. That kind of active recruiting usually means the scheduling pressure is hitting before capacity is in place.\n\nWhen hospice teams are stretched across a multi-state footprint, billing often absorbs the impact too: coders can't keep up with the volume, denials creep up, and cash flow lags behind admissions growth.\n\nDirectors at similar multi-state hospice networks have cut coding turnaround from 12 days to 2 and freed up $2.5M in cash flow without adding billing headcount.\n\nWorth exploring whether your OR and WA operations are seeing the same pattern before Q2 closes?"
+      },
+      "version_b": {
+        "variant_id": "struct_story",
+        "subject_line": "what a multi-state hospice director found six months after expanding into three new markets",
+        "email_body": "Hi Mary,\n\nA Director of Operations at a multi-state hospice network was doing exactly what you're doing, rolling into new markets while running Walk-In hiring events to fill clinical gaps. She told me the billing side quietly fell apart first. Coders in the new regions were behind, denials were climbing, and cash flow didn't match admissions numbers.\n\nThey switched to autonomous coding. First-pass accuracy went to 98%, turnaround dropped from 12 days to 2. She said the bigger surprise was what the billing team could focus on once the coding backlog cleared.\n\nBristol Hospice's Oregon and Washington expansion feels like a similar inflection point. Worth 15 minutes to see if the same gap is building before Q2 closes?"
+      }
+    },
+    {
+      "pair_number": 2,
+      "profile_id": "jeremy_tuterow",
+      "person_name": "Jeremy",
+      "company_name": "Adult and Child Health",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Peer Story",
+      "archetype_description": "Version A observes the HR implementation hiring and bridges to billing. Version B leads with a peer director's experience at a similar behavioral health network.",
+      "what_to_notice": "Which email would you actually respond to if you were a Director of Practice Operations in the middle of a systems overhaul?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "adult and child health's hr implementation search",
+        "email_body": "Hi Jeremy,\n\nSaw your post about hiring a UKG Ready HR Implementation specialist. That kind of search usually means there's a broader systems overhaul happening underneath, HR platform changes tend to surface when the operational infrastructure is being rebuilt.\n\nWhen behavioral health networks are scaling systems on the admin side, the billing layer often lags. CHW billing in particular is complex, variable payers, inconsistent documentation standards across sites, coders stretched thin.\n\nDirectors at similar multi-site behavioral health organizations have reduced their cost to collect by 70% and cut denial rates by 27% by moving coding off their team's plate entirely.\n\nIs the billing infrastructure part of what you're rethinking alongside HR, or is that a separate conversation for later in the year?"
+      },
+      "version_b": {
+        "variant_id": "struct_story",
+        "subject_line": "what a behavioral health operations director found when scaling across 12 sites with a new hr platform",
+        "email_body": "Hi Jeremy,\n\nA Director of Practice Operations at a behavioral health network similar to Adult and Child Health was mid-systems-overhaul, new HR platform, community health worker staffing gaps, billing falling behind documentation standards across sites. He said the coding team was the last thing they thought to address and the first thing that blew up.\n\nAfter switching to autonomous coding, coding costs dropped 40%, denials fell 27%. He told me what surprised him most was how much time his team reclaimed from billing follow-up.\n\nGiven the UKG implementation and the CHW staffing pressure at Adult and Child Health, it feels like a similar moment. Worth 15 minutes to see if the billing side is absorbing pressure you can't see yet?"
+      }
+    },
+    {
+      "pair_number": 3,
+      "profile_id": "connie_perez",
+      "person_name": "Connie",
+      "company_name": "Hospice of the Valley",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Peer Story",
+      "archetype_description": "Version A uses a new-role hook with workforce turnover data. Version B leads with a VP peer story and bridges to Connie's situation.",
+      "what_to_notice": "Which email better earns the right to talk about billing? Does the peer story feel relevant or generic?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "your new role at hospice of the valley",
+        "email_body": "Hi Connie,\n\nSaw your post about stepping into the Senior VP role at Hospice of the Valley. New role, new line of sight into where the operations either hold or leak.\n\nWith nearly 12% of the workforce retiring last year, the billing and coding team faces compounding pressure, fewer experienced coders, documentation gaps, and a payer mix that doesn't forgive slow turnaround.\n\nVPs at hospice networks with similar workforce pressures have unlocked $2.5M in cash flow and cut coding costs by 40% without adding headcount.\n\nNew roles are the best time to rethink the stack. What's your read on where the billing infrastructure stands right now?"
+      },
+      "version_b": {
+        "variant_id": "struct_story",
+        "subject_line": "what a new VP found in month two at a hospice network losing 12% of its workforce per year",
+        "email_body": "Hi Connie,\n\nA VP of Business Operations at a hospice network similar to Hospice of the Valley was two months into a new role when she realized the billing operation wasn't keeping pace with patient volume. High retirement rates had thinned the coding team, documentation quality had slipped, and denials were climbing quietly while she was focused on everything else.\n\nShe switched to autonomous coding. Cash flow unlocked $2.5M in one quarter, coding turnaround dropped from 14 days to 3. She told me month three looked very different from month two.\n\nGiven Hospice of the Valley's 12% retirement rate last year and your fresh vantage point as the new VP, it might be worth a look. Worth 15 minutes before your Q2 reporting cycle kicks in?"
+      }
+    },
+    {
+      "pair_number": 4,
+      "profile_id": "lauren_mcmillan",
+      "person_name": "Lauren",
+      "company_name": "Saint Luke's East Hospital",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Anti-AI (revised)",
+      "archetype_description": "Version A follows the standard framework. Version B breaks the formula \u2014 opens with the punchline, skips sections, ends with a sharp time-anchored ask. No intentional typo this time.",
+      "what_to_notice": "Does Version B feel more like a real person sent it, or does breaking the formula make it harder to follow? Is the clarity better or worse than Day 2's anti-AI?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "something we noticed at saint luke's east",
+        "email_body": "Hi Lauren,\n\nRead about Saint Luke's East Maternity Center being nationally ranked by U.S. News. Strong clinical recognition, but there's a billing pattern that usually follows high-acuity quality operations: documentation complexity outpaces coding capacity.\n\nFacilities running complex OB and primary care with above-average infection metrics tend to see denial rates spike when coding can't keep up with documentation variance across service lines.\n\nDirectors at similar multi-service hospital operations have cut denial rates 27% and freed up 5% more revenue without adding coding headcount.\n\nIs the coding team keeping up with the documentation volume across primary care and maternity, or is that backlog building quietly?"
+      },
+      "version_b": {
+        "variant_id": "struct_anti_ai",
+        "subject_line": "the billing pattern that follows a u.s. news maternity ranking",
+        "email_body": "Hi Lauren,\n\nThe U.S. News maternity ranking is real, and it usually triggers something most Directors don't see until month six: documentation complexity spikes when nationally recognized facilities attract higher-acuity cases, and coding teams aren't built for that variance.\n\nHere's what the pattern looks like. The recognition drives volume. Volume drives documentation variance across OB, primary care, and any comorbidity coding. Variance drives denials. By the time it shows up in the A/R report, it's been building for 18 months.\n\nAutonomous coding gets first-pass accuracy to 98% and cuts turnaround from 12 days to 2. A Director at a similar nationally ranked hospital ran the comparison herself.\n\nWorth 15 minutes before your Q2 close to see if the pattern fits Saint Luke's East?"
+      }
+    },
+    {
+      "pair_number": 5,
+      "profile_id": "jennifer_price",
+      "person_name": "Jennifer",
+      "company_name": "Embark Behavioral Health",
+      "persona_type": "director",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Current Style",
+      "version_b_label": "Anti-AI (revised)",
+      "archetype_description": "Version A uses a hiring signal bridge. Version B opens with the punchline and works backward \u2014 no formula, no building up to the ask.",
+      "what_to_notice": "Version B skips the standard Observation \u2192 Problem \u2192 Proof structure. Does it land better or worse? Is the punchline-first approach convincing or confusing?",
+      "version_a": {
+        "variant_id": "control",
+        "subject_line": "embark behavioral health's nursing recruitment push",
+        "email_body": "Hi Jennifer,\n\nSaw your post about the nursing recruitment events at Embark. That level of active hiring across clinical roles usually means the operations team is absorbing the gap before the new hires are onboarded.\n\nWhen behavioral health organizations are scaling clinical capacity, billing often falls behind, intake documentation is inconsistent, coders can't keep up with the volume variance, and denials accumulate quietly.\n\nDirectors at similar behavioral health networks have cut coding costs by 40% and reduced denial rates 27% without adding billing headcount.\n\nIs the billing team absorbing capacity pressure while clinical hiring catches up, or is that further down the list right now?"
+      },
+      "version_b": {
+        "variant_id": "struct_anti_ai",
+        "subject_line": "embark's intake documentation gap",
+        "email_body": "Hi Jennifer,\n\nIntake documentation for behavioral health is the hardest category to code accurately at scale, and Embark's been hiring hard on the clinical side while that problem builds in the background.\n\nIt's not a training problem. It's a volume and variance problem: RNs document differently across locations, payer requirements don't match, and the coding team can't manually adjudicate that gap at the pace you're growing. Autonomous coding handles it.\n\nA Director at a similar behavioral health network cut coding costs 40% and got denial rates 27% below baseline. She said the intake documentation gap was the whole game.\n\nWorth 15 minutes before Q2 closes, Jennifer?"
+      }
+    },
+    {
+      "pair_number": 6,
+      "profile_id": "nathan_niles",
+      "person_name": "Nathan",
+      "company_name": "White Horse Village Inc.",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Peer Story",
+      "version_b_label": "Anti-AI (revised)",
+      "archetype_description": "Both versions are non-control. Peer story vs anti-AI revised head-to-head \u2014 who holds second place?",
+      "what_to_notice": "Neither of these is our standard style. Which one feels more credible coming from someone you've never met? Which would you actually reply to?",
+      "version_a": {
+        "variant_id": "struct_story",
+        "subject_line": "what a VP of finance found when rightsizing a continuing care campus's revenue cycle",
+        "email_body": "Hi Nathan,\n\nA VP of Finance at a continuing care retirement community similar to White Horse Village was rethinking the technology stack, similar to the NexLyte and Shift partnership work you've been doing. He started with staffing and scheduling, which made sense. But the billing side was where the quiet money was.\n\nAfter moving to autonomous coding, he cut coding costs 40%, unlocked $2.5M in cash flow, and got A/R days down 30% in one quarter. He told me the rest of the tech stack decisions looked a lot easier once the revenue cycle was stable.\n\nWorth comparing notes on how similar CCRCs have approached the sequence? 15 minutes before your Q2 close?"
+      },
+      "version_b": {
+        "variant_id": "struct_anti_ai",
+        "subject_line": "white horse village's revenue cycle question",
+        "email_body": "Hi Nathan,\n\nThe NexLyte and Shift partnership is the kind of thoughtful technology sequencing most VP Finance leaders at CCRCs don't get to until year three. You're ahead of the curve on the staffing and scheduling layer.\n\nHere's what usually gets deferred longest: the coding and billing layer. Most CCRCs run on legacy coding workflows that haven't been updated since the last EHR migration, and the cost-to-collect is higher than it needs to be.\n\nA/R days down 30%, cash flow up $2.5M, coding costs down 40%. That's what autonomous coding delivered at a CCRC with a similar payer mix.\n\nWorth 15 minutes to see if the gap exists at White Horse Village before Q2 closes?"
+      }
+    },
+    {
+      "pair_number": 7,
+      "profile_id": "sherri_liebl",
+      "person_name": "Sherri",
+      "company_name": "CentraCare",
+      "persona_type": "vp",
+      "phase": "style_exploration",
+      "dimension_tested": "email_structure",
+      "version_a_label": "Peer Story",
+      "version_b_label": "Anti-AI (revised)",
+      "archetype_description": "Story vs anti-AI on a VP Revenue Services at a major health system that just did layoffs \u2014 rich financial signal.",
+      "what_to_notice": "Which approach works better for a senior revenue cycle leader who's just been through a workforce reduction? Does the peer story resonate more, or does the direct punchline-first approach?",
+      "version_a": {
+        "variant_id": "struct_story",
+        "subject_line": "what a VP revenue services found after cutting 500 staff while keeping cash flow stable",
+        "email_body": "Hi Sherri,\n\nA VP Revenue Services at a health system similar to CentraCare was six months post-workforce reduction, trying to maintain billing output with 5% less headcount across 44 locations. She told me the first thing that broke was coding capacity, the team she'd lost included experienced coders, and the backlog compounded faster than she expected.\n\nThey moved to autonomous coding. A/R days came down 30%, coding costs dropped 40%, and cash flow stabilized without rehiring. She said the reduction actually forced a better long-term answer than she'd have found otherwise.\n\nGiven CentraCare's 535-person reduction across 44 locations, it sounds like a similar moment. Worth 15 minutes before your Q2 close?"
+      },
+      "version_b": {
+        "variant_id": "struct_anti_ai",
+        "subject_line": "centracare's coding capacity after 535 layoffs",
+        "email_body": "Hi Sherri,\n\nCentraCare's 535-person reduction across 44 locations was one of the bigger health system workforce actions in the region this year. When a reduction that size happens, the coding and billing layer absorbs the hit in ways that don't show up in the A/R report for 60 to 90 days.\n\nExperienced coders leave first, usually. Documentation quality drops. First-pass denial rates creep up. Cash flow gaps widen before anyone spots the root cause.\n\nAutonomous coding closes that gap. A/R days down 30%, coding costs down 40%, first-pass accuracy at 98%. One health system VP said she wished she'd done it before the reduction, not after.\n\nWorth 15 minutes before Q2 closes, Sherri?"
+      }
+    }
+  ]
+}

@@ -1,12 +1,34 @@
 {
-  "day": 2,
+  "current_day": 3,
   "phase": "style_exploration",
-  "email_format": "single_email",
+  "updated_at": "2026-04-17T00:00:00Z",
   "elo_leaders": {
-    "email_structure": {
-      "label": "THE ONE framework",
-      "variant_id": "struct_theone",
-      "elo": 1585
-    }
-  }
+    "email_structure": [
+      {
+        "variant_id": "struct_theone",
+        "label": "THE ONE framework",
+        "elo": 1630.0
+      },
+      {
+        "variant_id": "struct_story",
+        "label": "Peer story",
+        "elo": 1555.4
+      },
+      {
+        "variant_id": "struct_anti_ai",
+        "label": "Anti-AI (revised)",
+        "elo": 1495.9
+      }
+    ]
+  },
+  "day3_message": "Today tests peer story vs control directly for the first time. 3 story vs control pairs, 2 anti-AI (revised, no typo) vs control, 2 story vs anti-AI.",
+  "reviewers": [
+    "prahalad",
+    "rahul",
+    "vinayak",
+    "sheetal",
+    "ameya",
+    "aditya",
+    "vaibhav"
+  ]
 }
